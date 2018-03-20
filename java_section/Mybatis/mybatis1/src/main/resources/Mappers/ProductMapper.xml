@@ -6,7 +6,7 @@
 <mapper namespace="com.ksit.mapper.ProductMapper">
 
     <!--id就是方法名,参数类型略-->
-    <insert id="insert" parameterType="com.ksit.entity">
+    <insert id="insert" parameterType="com.ksit.entity.Product">
       /*这里面调用的还是实体类的get/set方法,不可能调用属性*/
         insert into t_product(product_name,product_price)
         values(#{productName},#{productPrice})
