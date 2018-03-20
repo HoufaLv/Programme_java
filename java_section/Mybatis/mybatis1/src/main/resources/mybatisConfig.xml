@@ -7,7 +7,7 @@
     
     <environments default="development">
         <!--可以配置多个数据源,根据不同的用途区别不同的数据源-->
-        <environment id="devenlopment">
+        <environment id="development">
             <transactionManager type="JDBC"></transactionManager>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>

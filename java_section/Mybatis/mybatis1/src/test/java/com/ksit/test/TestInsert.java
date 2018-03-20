@@ -15,16 +15,15 @@ public class TestInsert {
     @Test
     public void testInsert(){
         try {
+            Product product = new Product("test3", "44.44");
+
             Reader reader = Resources.getResourceAsReader("mybatisConfig.xml");
-            System.out.println(reader);
 
             SqlSessionFactory sqlSessionFactory  = new SqlSessionFactoryBuilder().build(reader);
-            System.out.println(sqlSessionFactory);
 
             SqlSession sqlSession = sqlSessionFactory.openSession();
-            System.out.println(sqlSession);
 
-            sqlSession.insert("com.ksit.mapper.ProductMapper",new Product("test3","44.44"));
+            sqlSession.insert("com.ksit.mappers.ProductMapper",new Product("test3", "44.44"));
             sqlSession.close();
 
         } catch (IOException e) {

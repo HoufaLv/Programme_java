@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!--这个名字随便起,只是为了唯一标识一个方法-->
-<mapper namespace="com.ksit.mapper.ProductMapper">
+<mapper namespace="com.ksit.mappers.ProductMapper">
 
     <!--id就是方法名,参数类型略-->
     <insert id="insert" parameterType="com.ksit.entity.Product">
