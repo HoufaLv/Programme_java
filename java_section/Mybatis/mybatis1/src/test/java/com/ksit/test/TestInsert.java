@@ -9,6 +9,8 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class TestInsert {
 
@@ -23,8 +25,9 @@ public class TestInsert {
 
             SqlSession sqlSession = sqlSessionFactory.openSession();
 
-            sqlSession.insert("com.ksit.mappers.ProductMapper",new Product("test3", "44.44"));
+            sqlSession.insert("com.ksit.mapper.ProductMapper",new Product("test3", "44.44"));
             sqlSession.close();
+
 
         } catch (IOException e) {
             e.printStackTrace();

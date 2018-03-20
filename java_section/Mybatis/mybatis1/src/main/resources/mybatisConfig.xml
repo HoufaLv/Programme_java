@@ -20,7 +20,7 @@
 
     <!--配置映射文件位置-->
     <mappers>
-        <mapper resource="Mappers/ProductMapper.xml"/>
+        <mapper resource="mapper/ProductMapper.xml"/>
     </mappers>
 
 </configuration>
