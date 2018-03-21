@@ -25,9 +25,8 @@ public class TestInsert {
 
             SqlSession sqlSession = sqlSessionFactory.openSession();
 
-            sqlSession.insert("com.ksit.mapper.ProductMapper",new Product("test3", "44.44"));
+            sqlSession.insert("com.ksit.mapper.ProductMapper.insert",new Product("test3", "44.44"));
             sqlSession.close();
-
 
         } catch (IOException e) {
             e.printStackTrace();
