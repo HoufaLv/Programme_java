@@ -12,5 +12,9 @@
     values(#{productName},#{productPrice})
 </insert>
 
+<select id="queryById" parameterType="Integer" resultType="com.ksit.entity.Product">
+  SELECT * FROM t_product WHERE id = ${_parameter}
+</select>
+
 
 </mapper>

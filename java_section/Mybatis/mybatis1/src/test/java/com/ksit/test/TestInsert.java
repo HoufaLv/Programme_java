@@ -5,6 +5,8 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -14,22 +16,27 @@ import java.util.ArrayList;
 
 public class TestInsert {
 
+    SqlSession sqlSession;
+
+    @Before
+    public void initSqlSessionFactory() throws IOException {
+        sqlSession = new SqlSessionFactoryBuilder().build(Resources.getResourceAsReader("mybatisConfig.xml")).openSession();
+    }
+
     @Test
-    public void testInsert(){
-        try {
-            Product product = new Product("test3", "44.44");
+    public void testInsert() {
+        sqlSession.insert("com.ksit.mapper.ProductMapper.insert", new Product("test4", "55.55"));
+        sqlSession.commit();
+    }
 
-            Reader reader = Resources.getResourceAsReader("mybatisConfig.xml");
+    @Test
+    public void testQureyById() throws IOException {
+        Object o = sqlSession.selectOne("com.ksit.mapper.ProductMapper.queryById",Integer.valueOf(9));
+        System.out.println(o);
+    }
 
-            SqlSessionFactory sqlSessionFactory  = new SqlSessionFactoryBuilder().build(reader);
-
-            SqlSession sqlSession = sqlSessionFactory.openSession();
-
-            sqlSession.insert("com.ksit.mapper.ProductMapper.insert",new Product("test3", "44.44"));
-            sqlSession.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    @After
+    public void closeSqlSession(){
+        sqlSession.close();
     }
 }
