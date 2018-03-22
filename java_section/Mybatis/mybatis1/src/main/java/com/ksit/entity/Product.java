@@ -11,6 +11,21 @@ public class Product {
         this.productPrice = productPrice;
     }
 
+    public Product(Integer id, String productName, String productPrice) {
+        this.id = id;
+        this.productName = productName;
+        this.productPrice = productPrice;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", productName='" + productName + '\'' +
+                ", productPrice='" + productPrice + '\'' +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }
