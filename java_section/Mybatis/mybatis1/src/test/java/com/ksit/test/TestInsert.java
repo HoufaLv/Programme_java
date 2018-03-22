@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.Reader;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -38,5 +39,15 @@ public class TestInsert {
     @After
     public void closeSqlSession(){
         sqlSession.close();
+    }
+
+    @Test
+    public void originCRUD() throws IOException {
+        InputStream inputStream = Resources.getResourceAsStream("mybatisConfig.xml");
+
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
     }
 }
