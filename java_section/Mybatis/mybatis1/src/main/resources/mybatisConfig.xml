@@ -18,6 +18,7 @@
         <typeAlias type="com.ksit.entity.Product" alias="Product"></typeAlias>
         <typeAlias type="com.ksit.entity.Student" alias="Student"></typeAlias>
         <typeAlias type="com.ksit.entity.School" alias="School"></typeAlias>
+        <typeAlias type="com.ksit.entity.Movie" alias="Movie"></typeAlias>
     </typeAliases>
     <!--endregion-->
 
@@ -38,6 +39,7 @@
     <mappers>
         <mapper  resource="mapper/ProductMapper.xml"/>
         <mapper resource="mapper/StudentMapper.xml"/>
+        <mapper resource="mapper/MovieMapper.xml"/>
     </mappers>
 
 </configuration>
