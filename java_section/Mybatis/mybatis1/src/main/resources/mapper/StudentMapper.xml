@@ -4,6 +4,8 @@
 <!--这个名字随便起,只是为了唯一标识一个方法-->
 <mapper namespace="com.ksit.mapper.StudentMapper">
 
+    <cache/>
+
     <!--region 学生和学校是一对多的关系,学生和标签是多对对的关系-->
 
     <!--endregion-->
