@@ -43,4 +43,12 @@
 
         </trim>
     </select>
+
+    <select id="queryByIdList" parameterType="list" resultType="Movie">
+      SELECT * FROM movie WHERE id IN
+      <foreach collection="idList" item="id" open="(" close=")" separator=",">
+          #{id}
+      </foreach>
+    </select>
+
 </mapper>

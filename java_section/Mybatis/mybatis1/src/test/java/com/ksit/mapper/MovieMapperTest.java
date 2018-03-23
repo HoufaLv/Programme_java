@@ -9,6 +9,8 @@ import org.junit.Test;
 
 import javax.management.MXBean;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class MovieMapperTest {
@@ -32,6 +34,13 @@ public class MovieMapperTest {
     @Test
     public void testQueryByTitleOrDirector(){
         for (Movie movie : movieMapper.queryByTitleOrDirector(null, null)) {
+            System.out.println(movie);
+        }
+    }
+
+    @Test
+    public void testQueryByIdList(){
+        for (Movie movie : movieMapper.queryByIdList(Arrays.asList(200, 201, 202))) {
             System.out.println(movie);
         }
     }
