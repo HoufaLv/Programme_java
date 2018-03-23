@@ -5,5 +5,15 @@
 <!--这个名字随便起,只是为了唯一标识一个方法-->
 <mapper namespace="com.ksit.mapper.MovieMapper">
 
+    <!--使用动态SQL 语句功能-->
+    <!--if 标签-->
+    <select id="queryListByTitle"  parameterType="string" resultType="Movie">
+        SELECT * FROM movie
 
+        /*如果title 为null 或者没有值的话 , 将会查出所有的记录,如果给值,将会根据给的值查询*/
+        <if test="title != null and title != ''">
+            WHERE title LIKE #{title}
+        </if>
+
+    </select>
 </mapper>
