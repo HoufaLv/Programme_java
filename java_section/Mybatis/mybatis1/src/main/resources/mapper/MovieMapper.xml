@@ -22,15 +22,25 @@
         SELECT * FROM movie
         /*如果titile不等于null 根据title查,否则输出全部*/
         /*如果director 不等于null 则同时根据director 查*/
-        <where>
-            <!--如果director 不等于null 则同时根据director 查-->
+        <!--<where>
+            &lt;!&ndash;如果director 不等于null 则同时根据director 查&ndash;&gt;
             <if test="title != null and title != ''">
                 WHERE title LIKE #{title}
             </if>
             <if test="director != null and title != ''">
                 AND director LIKE #{director}
             </if>
-        </where>
+        </where>-->
 
+        /*prefix / prefixOverrides prefix 是如果没有的话,进行添加 / prefixOverrides : 如果有的话,进行覆盖操作*/
+        <trim prefix="where"  suffixOverrides="and | or">
+            <if test="title != null and title != ''">
+                title like #{title} AND
+            </if>
+            <if test="director != null and director != ''">
+                director like #{director}
+            </if>
+
+        </trim>
     </select>
 </mapper>
