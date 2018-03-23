@@ -27,7 +27,13 @@ public class MovieMapperTest {
         for (Movie movie : movieMapper.queryListByTitle("%罗马%")) {
             System.out.println(movie);
         }
-        ;
+    }
+
+    @Test
+    public void testQueryByTitleOrDirector(){
+        for (Movie movie : movieMapper.queryByTitleOrDirector(null, null)) {
+            System.out.println(movie);
+        }
     }
 
     @After

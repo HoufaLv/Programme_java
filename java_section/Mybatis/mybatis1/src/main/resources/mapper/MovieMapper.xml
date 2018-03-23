@@ -16,4 +16,21 @@
         </if>
 
     </select>
+
+    <!--where 标签-->
+    <select id="queryByTitleOrDirector" parameterType="string" resultType="Movie">
+        SELECT * FROM movie
+        /*如果titile不等于null 根据title查,否则输出全部*/
+        /*如果director 不等于null 则同时根据director 查*/
+        <where>
+            <!--如果director 不等于null 则同时根据director 查-->
+            <if test="title != null and title != ''">
+                WHERE title LIKE #{title}
+            </if>
+            <if test="director != null and title != ''">
+                AND director LIKE #{director}
+            </if>
+        </where>
+
+    </select>
 </mapper>

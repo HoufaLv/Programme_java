@@ -9,4 +9,5 @@ public interface MovieMapper {
 
     List<Movie> queryListByTitle(@Param("title") String title);
 
+    List<Movie> queryByTitleOrDirector(@Param("title") String title,@Param("director") String director);
 }
