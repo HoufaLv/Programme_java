@@ -26,8 +26,10 @@ public class TestInsert {
 
     @Test
     public void testInsert() {
-        sqlSession.insert("com.ksit.mapper.ProductMapper.insert", new Product("test4", "55.55"));
+        Product product = new Product("test5", "66.66");
+        sqlSession.insert("com.ksit.mapper.ProductMapper.insert", product);
         sqlSession.commit();
+        System.out.println(product.getId());
     }
 
     @Test

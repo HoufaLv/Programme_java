@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--这个名字随便起,只是为了唯一标识一个方法-->
+<mapper namespace="com.ksit.mapper.StudentMapper">
+
+    <!--region 学生和学校是一对多的关系,学生和标签是多对对的关系-->
+
+    <!--endregion-->
+
+    <!--可以理解为嵌入,可以将这个resultMap 嵌入别的resultMap 中去-->
+    <resultMap id="baseMap" type="Student">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="school_id" property="schoolId"/>
+    </resultMap>
+    
+    <resultMap id="studentMapWithTag" type="Student" extends="baseMap">
+        <collection property="tagList" ofType="com.ksit.entity.Tag">
+            <id column="tid" property="id"/>
+            <result column="tag_name" property="tagName"/>
+        </collection>
+    </resultMap>
+
+    <select id="findByIdWithTag" parameterType="int" resultMap="studentMapWithTag">
+        SELECT
+            stu.id,
+            stu. NAME,
+            stu.age,
+            stu.school_id,
+            st.tid,
+            tag.tag_name
+        FROM
+            t_student stu
+        INNER JOIN t_stu_tag st ON stu.id = st.sid
+        INNER JOIN t_tag tag ON st.tid = tag.id
+        WHERE
+        stu.id = #{id}
+    </select>
+
+    <select id="findStudentSchoolById" parameterType="int" resultType="Student">
+        SELECT
+            stu.id,
+            stu.name,
+            stu.age,
+            stu.school_id,
+            sch.id as 'school.id',
+            sch.school_name as 'school.schoolName',
+            sch.tel as 'school.tel'
+        FROM
+            t_student stu
+        INNER JOIN t_school sch ON stu.school_id = sch.id
+        WHERE
+            stu.id = #{id};
+    </select>
+    
+    <resultMap id="studentMap" type="Student" extends="baseMap">
+        <!--除了baseMap 中的配置还增加如下配置-->
+        <association property="school" javaType="School">
+            <id column="id" property="id"></id>
+            <result column="school_name" property="schoolName"></result>
+            <result column="tel" property="tel"></result>
+        </association>
+    </resultMap>
+
+    <select id="queryAll" resultMap="studentMap">
+        SELECT
+            stu.id,
+            stu.name,
+            stu.age,
+            stu.school_id,
+            sch.school_name,
+            sch.tel
+        FROM
+            t_student stu
+        INNER JOIN t_school sch ON stu.school_id = sch.id
+    </select>
+
+
+</mapper>

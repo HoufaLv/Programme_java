@@ -13,9 +13,11 @@
     </settings>
     <!--endregion-->
 
-    <!--region 将com.ksit.entity.Product 配置别名为Product-->
+    <!--region 将com.ksit.entity 中的实体类配置为别名Product/Student-->
     <typeAliases>
         <typeAlias type="com.ksit.entity.Product" alias="Product"></typeAlias>
+        <typeAlias type="com.ksit.entity.Student" alias="Student"></typeAlias>
+        <typeAlias type="com.ksit.entity.School" alias="School"></typeAlias>
     </typeAliases>
     <!--endregion-->
 
@@ -35,6 +37,7 @@
     <!--配置映射文件位置-->
     <mappers>
         <mapper  resource="mapper/ProductMapper.xml"/>
+        <mapper resource="mapper/StudentMapper.xml"/>
     </mappers>
 
 </configuration>
