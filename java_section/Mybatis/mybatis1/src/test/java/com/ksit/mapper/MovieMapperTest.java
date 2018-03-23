@@ -10,6 +10,7 @@ import org.junit.Test;
 import javax.management.MXBean;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -43,6 +44,17 @@ public class MovieMapperTest {
         for (Movie movie : movieMapper.queryByIdList(Arrays.asList(200, 201, 202))) {
             System.out.println(movie);
         }
+    }
+
+    @Test
+    public void testInsertBatch(){
+        Movie movie = new Movie();
+        movie.setTitle("功夫熊猫");
+        movie.setRate(9.2F);
+        movie.setDirector("不清楚");
+
+        movieMapper.insertBatch(Arrays.asList(movie));
+
     }
 
     @After

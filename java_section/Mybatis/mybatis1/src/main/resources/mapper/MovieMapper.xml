@@ -51,4 +51,10 @@
       </foreach>
     </select>
 
+    <insert id="insertBatch" parameterType="list">
+        INSERT INTO movie (title,rate,director) VALUES 
+        <foreach collection="directorList" item="movie" separator=",">
+            (#{movie.title},#{movie.rate},#{movie.director})
+        </foreach>
+    </insert>
 </mapper>

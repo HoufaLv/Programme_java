@@ -12,4 +12,6 @@ public interface MovieMapper {
     List<Movie> queryByTitleOrDirector(@Param("title") String title,@Param("director") String director);
 
     List<Movie> queryByIdList(@Param("idList") List<Integer> id);
+
+    void insertBatch(@Param("directorList") List<Movie> movieList);
 }
