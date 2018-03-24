@@ -25,6 +25,24 @@ public class EmployeeMapperTest {
         employeeMapper.insertEmployee(new Employee("小红","女",23));
     }
 
+    @Test
+    public void testQueryById(){
+        Employee employee = employeeMapper.queryById(1);
+        System.out.println(employee);
+    }
+
+    @Test
+    public void testUpdate(){
+        Employee employee = new Employee();
+        employee.setEmpName("小蓝");
+        employee.setEmpGender("男");
+        employee.setEmpAge(24);
+        employee.setId(1);
+
+        employeeMapper.updateEmployee(employee);
+    }
+
+
     @After
     public void realease(){
         sqlSession.close();

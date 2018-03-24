@@ -11,12 +11,29 @@ public class Employee {
     private String empGender;
     private Integer empAge;
 
-    public Employee(Integer empAge) { }
+    public Employee() { }
 
     public Employee(String empName, String empGender, Integer empAge) {
         this.empName = empName;
         this.empGender = empGender;
         this.empAge = empAge;
+    }
+
+    public Employee(Integer id, String empName, String empGender, Integer empAge) {
+        this.id = id;
+        this.empName = empName;
+        this.empGender = empGender;
+        this.empAge = empAge;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", empName='" + empName + '\'' +
+                ", empGender='" + empGender + '\'' +
+                ", empAge=" + empAge +
+                '}';
     }
 
     public Integer getId() {
