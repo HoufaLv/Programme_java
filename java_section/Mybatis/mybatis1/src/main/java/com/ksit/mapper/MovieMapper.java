@@ -14,4 +14,7 @@ public interface MovieMapper {
     List<Movie> queryByIdList(@Param("idList") List<Integer> id);
 
     void insertBatch(@Param("directorList") List<Movie> movieList);
+
+    void updateMovie(Movie movie);
+
 }

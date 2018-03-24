@@ -57,6 +57,15 @@ public class MovieMapperTest {
 
     }
 
+    @Test
+    public void testUpdateMovie(){
+        Movie movie = new Movie();
+        movie.setId(777);
+        movie.setDirector("可能是个日本人");
+        movie.setTitle("功夫熊猫");
+        movieMapper.updateMovie(movie);
+    }
+
     @After
     public void release(){
         sqlSession.close();

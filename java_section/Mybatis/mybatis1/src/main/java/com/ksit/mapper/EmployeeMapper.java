@@ -18,4 +18,6 @@ public interface EmployeeMapper {
 
     @Update("update t_employee set emp_name=#{empName},emp_gender=#{empGender},emp_age=#{empAge} where id=#{id}")
     public void updateEmployee(Employee employee);
+
+
 }

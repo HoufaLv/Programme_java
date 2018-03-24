@@ -1,6 +1,7 @@
 package com.ksit.test;
 
 import com.ksit.entity.Product;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -41,6 +42,12 @@ public class TestInsert {
     @After
     public void closeSqlSession(){
         sqlSession.close();
+    }
+
+    @Test
+    public void testAmazing(){
+        String s = DigestUtils.md5Hex("4297f44b13955235245b2497399d7a93password.salt");
+        System.out.println(s);
     }
 
     @Test

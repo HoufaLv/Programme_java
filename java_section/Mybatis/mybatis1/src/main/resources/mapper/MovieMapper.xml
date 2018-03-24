@@ -56,4 +56,14 @@
             (#{movie.title},#{movie.rate},#{movie.director})
         </foreach>
     </insert>
+
+    <update id="updateMovie" parameterType="Movie">
+        UPDATE movie
+        <set>
+            <if test="title != null">title=#{title},</if>
+            <if test="rate != null">rate=#{rate}</if>
+            <if test="director != null">director=#{director} </if>
+        </set>
+        where id=#{id}
+    </update>
 </mapper>
