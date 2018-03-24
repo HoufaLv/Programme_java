@@ -40,7 +40,6 @@
             <if test="director != null and director != ''">
                 director like #{director}
             </if>
-
         </trim>
     </select>
 
