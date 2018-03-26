@@ -1,5 +1,6 @@
 package com.ksit.mapper;
 
+import com.ksit.entity.Classs;
 import com.ksit.entity.Person;
 import com.ksit.util.SqlSessionFactoryUtil;
 import org.apache.ibatis.session.SqlSession;
@@ -20,12 +21,25 @@ public class PersonMapperTest {
         personMapper = sqlSession.getMapper(PersonMapper.class);
     }
 
-    @Test
+   /* @Test
     public void queryClassNameByPersonId() {
         Person person = personMapper.queryClassNameByPersonId(1);
         System.out.println(person);
+    }*/
+
+    @Test
+    public void testQueryClassByPersonIdAnnotation(){
+        Person person = personMapper.queryPersonIdAnnotation(1);
+        System.out.println(person);
+
     }
 
+   /* @Test
+    public void testQueryById(){
+        Classs classs = personMapper.queryById(1);
+        System.out.println(classs);
+    }
+*/
     @After
     public void release(){
         sqlSession.close();

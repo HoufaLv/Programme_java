@@ -39,11 +39,14 @@
     
     <!--配置映射文件位置-->
     <mappers>
-        <mapper  resource="mapper/ProductMapper.xml"/>
+        <mapper class="com.ksit.mapper.PersonMapper"/>
+        <mapper class="com.ksit.mapper.ClasssMapper"/>
+
+       <!-- <mapper  resource="mapper/ProductMapper.xml"/>
         <mapper resource="mapper/StudentMapper.xml"/>
         <mapper resource="mapper/MovieMapper.xml"/>
-        <mapper class="com.ksit.mapper.EmployeeMapper"/>
-        <mapper resource="mapper/PersonMapper.xml"/>
+        <mapper class="com.ksit.mapper.EmployeeMapper"/>-->
+        <!--<mapper resource="mapper/PersonMapper.xml"/>-->
     </mappers>
 
 </configuration>

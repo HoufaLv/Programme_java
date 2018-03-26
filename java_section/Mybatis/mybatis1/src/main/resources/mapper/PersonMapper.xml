@@ -5,24 +5,24 @@
 <mapper namespace="com.ksit.mapper.PersonMapper">
 
     <!--实现多对一查询, 根据学生的id 查询 对应班级信息,两表 inner join 不使用 -->
-    <select id="queryClassNameByPersonId" parameterType="int" resultMap="PersonMap">
-        SELECT tpe.id,tpe.name,tpe.gender,tpe.class_id,tcl.id,tcl.name
-        FROM  t_person tpe INNER JOIN t_classs tcl ON tpe.class_id = tcl.id
-        WHERE tpe.id = #{id}
-    </select>
+    <!--<select id="queryClassNameByPersonId" parameterType="int" resultMap="PersonMap">-->
+        <!--SELECT tpe.id,tpe.name,tpe.gender,tpe.class_id,tcl.id,tcl.name-->
+        <!--FROM  t_person tpe INNER JOIN t_classs tcl ON tpe.class_id = tcl.id-->
+        <!--WHERE tpe.id = #{id}-->
+    <!--</select>-->
 
     <!--一对一暂时使用 association 节点来测试-->
-    <resultMap id="PersonMap" type="Person">
-        <id column="id" property="id"/>
-        <result column="name" property="name"/>
-        <result column="gender" property="gender"/>
+    <!--<resultMap id="PersonMap" type="Person">-->
+        <!--<id column="id" property="id"/>-->
+        <!--<result column="name" property="name"/>-->
+        <!--<result column="gender" property="gender"/>-->
 
-        <association property="classs" javaType="Classs">
-           <id property="id" column="class_id"/>
-            <result property="name" column="name"/>
-        </association>
+        <!--<association property="classs" javaType="Classs">-->
+           <!--<id property="id" column="class_id"/>-->
+            <!--<result property="name" column="name"/>-->
+        <!--</association>-->
 
-    </resultMap>
+    <!--</resultMap>-->
 
 
 </mapper>

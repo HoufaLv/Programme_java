@@ -18,6 +18,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+            <scope>test</scope>
         </dependency>
 
         <!--region mysql dependency-->
@@ -25,6 +26,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.40</version>
+            <scope>runtime</scope>
         </dependency>
         <!--endregion mysql dependency-->
 
@@ -41,6 +43,7 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j-version}</version>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
