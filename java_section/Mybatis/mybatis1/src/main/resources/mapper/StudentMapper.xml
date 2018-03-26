@@ -11,13 +11,15 @@
     <!--endregion-->
 
     <!--可以理解为嵌入,可以将这个resultMap 嵌入别的resultMap 中去-->
+    <!--这样查出来肯定有一个Student 对象-->
     <resultMap id="baseMap" type="Student">
         <id column="id" property="id"/>
         <result column="name" property="name"/>
         <result column="age" property="age"/>
         <result column="school_id" property="schoolId"/>
     </resultMap>
-    
+
+    <!--如果使用这个resultMap 代表查出来的结果不仅有一个Student对象,而且还会对应一个Tag 对象-->
     <resultMap id="studentMapWithTag" type="Student" extends="baseMap">
         <collection property="tagList" ofType="com.ksit.entity.Tag">
             <id column="tid" property="id"/>
@@ -25,6 +27,8 @@
         </collection>
     </resultMap>
 
+    <!--三表联查,根据学生的id查询标签,多对多关系-->
+    <!--要封装一个Student 对象,Student 实体类中 有一个TagList 和 School-->
     <select id="findByIdWithTag" parameterType="int" resultMap="studentMapWithTag">
         SELECT
             stu.id,
