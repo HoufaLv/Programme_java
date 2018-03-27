@@ -19,6 +19,10 @@
     </typeAliases>
     <!--endregion-->
 
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
+
     <environments default="development">
         <!--可以配置多个数据源,根据不同的用途区别不同的数据源-->
         <environment id="development">
@@ -37,5 +41,7 @@
         <mapper resource="mapper/MovieMapper.xml"/>
 
     </mappers>
+
+
 
 </configuration>

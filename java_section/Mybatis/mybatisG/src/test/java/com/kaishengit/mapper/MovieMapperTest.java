@@ -1,5 +1,6 @@
 package com.kaishengit.mapper;
 
+import com.github.pagehelper.PageHelper;
 import com.kaishengit.entity.Movie;
 import com.kaishengit.entity.MovieExample;
 import com.ksit.util.SqlSessionFactoryUtil;
@@ -81,6 +82,10 @@ public class MovieMapperTest {
     }
 
 
+    /**
+     * 根据导演名称和评分 同时查询
+     *
+     */
     @Test
     public void selectLsitByDirector(){
         MovieExample movieExample = new MovieExample();
@@ -88,6 +93,29 @@ public class MovieMapperTest {
 
         List<Movie> movies = movieMapper.selectByExample(movieExample);
         System.out.println(movies);
+    }
+
+    @Test
+    public void selectByOrRelationship(){
+        MovieExample movieExample = new MovieExample();
+        //example.or(); 方法不支持链式编程,必须写两次方法
+        movieExample.or().andRateGreaterThanOrEqualTo(9.0F);
+        movieExample.or().andReleaseYearGreaterThanOrEqualTo("2002");
+        List<Movie> movies = movieMapper.selectByExample(movieExample);
+        System.out.println(movies);
+    }
+
+    @Test
+    public void testMybatisPaging(){
+        //从几开始,取几个
+        //也可以从第几页开始,取多少个
+        PageHelper.offsetPage(0,5);
+        MovieExample movieExample = new MovieExample();
+        List<Movie> movies = movieMapper.selectByExample(movieExample);
+        for (Movie m :
+                movies) {
+            System.out.println(m);
+        }
 
     }
 
