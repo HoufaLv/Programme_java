@@ -1,6 +1,20 @@
 package com.kaishengit.entity;
 
 public class Movie {
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", rate=" + rate +
+                ", releaseYear='" + releaseYear + '\'' +
+                ", sendTime='" + sendTime + '\'' +
+                ", director='" + director + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
     private Integer id;
 
     private String title;
