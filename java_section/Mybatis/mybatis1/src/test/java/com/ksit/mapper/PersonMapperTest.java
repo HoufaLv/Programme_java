@@ -27,12 +27,18 @@ public class PersonMapperTest {
         System.out.println(person);
     }*/
 
-    @Test
+  /*  @Test
     public void testQueryClassByPersonIdAnnotation(){
         Person person = personMapper.queryPersonIdAnnotation(1);
         System.out.println(person);
 
-    }
+    }*/
+
+  @Test
+  public void testQueryClassByPersonIdAnnotation(){
+      Person person = personMapper.queryClassByPersonIdAnnotation(1);
+      System.out.println(person);
+  }
 
    /* @Test
     public void testQueryById(){

@@ -9,7 +9,6 @@ import org.apache.ibatis.annotations.Select;
 
 public interface PersonMapper {
 
-
     //Person queryClassNameByPersonId(Integer id);
 
 
@@ -18,7 +17,7 @@ public interface PersonMapper {
      *
      * @param id
      * @return
-     */
+     *//*
     @Select("select * from t_person where id=#{id} ")
     @Results(value = {
             @Result(property = "id", column = "id"),
@@ -26,12 +25,13 @@ public interface PersonMapper {
             @Result(property = "gender", column = "gender"),
             @Result(property = "classId", column = "class_id")
     })
-    Person queryPersonIdAnnotation(Integer id);
+    Person queryPersonIdAnnotation(Integer id);*/
 
 
     /**
      * 一对多查询,封装一个Classs 到Person 类中去
      *
+     * 测试的时候一定要将方法名写对
      * @param id
      * @return
      */
@@ -41,8 +41,7 @@ public interface PersonMapper {
             @Result(property = "name", column = "name"),
             @Result(property = "gender", column = "gender"),
             @Result(property = "classId", column = "class_id"),
-
-            @Result(column = "class_id", property = "classs", one = @One(select = "com.ksit.mapper.ClasssMapper.queryById"))
+            @Result(property = "classs", column = "class_id", one = @One(select = "com.ksit.mapper.ClasssMapper.queryById"))
     })
     Person queryClassByPersonIdAnnotation(Integer id);
 
