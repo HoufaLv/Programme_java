@@ -8,6 +8,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class MovieMapperTest {
@@ -52,10 +54,6 @@ public class MovieMapperTest {
     }
 
     @Test
-    public void insertSelective() {
-    }
-
-    @Test
     public void selectByExampleWithBLOBs() {
     }
 
@@ -82,27 +80,15 @@ public class MovieMapperTest {
         System.out.println(movie);
     }
 
-    @Test
-    public void updateByExampleSelective() {
-    }
 
     @Test
-    public void updateByExampleWithBLOBs() {
+    public void selectLsitByDirector(){
+        MovieExample movieExample = new MovieExample();
+        movieExample.createCriteria().andDirectorLike("%卡梅隆%").andRateGreaterThanOrEqualTo(9.0F);
+
+        List<Movie> movies = movieMapper.selectByExample(movieExample);
+        System.out.println(movies);
+
     }
 
-    @Test
-    public void updateByExample() {
-    }
-
-    @Test
-    public void updateByPrimaryKeySelective() {
-    }
-
-    @Test
-    public void updateByPrimaryKeyWithBLOBs() {
-    }
-
-    @Test
-    public void updateByPrimaryKey() {
-    }
 }
