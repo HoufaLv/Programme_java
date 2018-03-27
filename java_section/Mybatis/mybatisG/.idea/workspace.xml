@@ -30,8 +30,8 @@
       <file leaf-file-name="TestJdbcAdv.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/jdbcc/TestJdbcAdv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+            <state relative-caret-position="140">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,9 +96,9 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="355" />
-    <option name="y" value="49" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="297" />
+    <option name="y" value="41" />
     <option name="width" value="1525" />
     <option name="height" value="1001" />
   </component>
@@ -532,7 +532,7 @@
       <updated>1522077386231</updated>
       <workItem from="1522077387749" duration="991000" />
       <workItem from="1522111932707" duration="7557000" />
-      <workItem from="1522153191719" duration="905000" />
+      <workItem from="1522153191719" duration="1845000" />
     </task>
     <servers />
   </component>
@@ -569,10 +569,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9453000" />
+    <option name="totallyTimeSpent" value="10393000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="355" y="49" width="1525" height="1001" extended-state="0" />
+    <frame x="297" y="41" width="1525" height="1001" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -834,8 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/jdbcc/TestJdbcAdv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        <state relative-caret-position="140">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
