@@ -30,8 +30,8 @@
       <file leaf-file-name="TestJdbcAdv.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/jdbcc/TestJdbcAdv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="316">
+              <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,9 +96,9 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="297" />
-    <option name="y" value="41" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="248" />
+    <option name="y" value="68" />
     <option name="width" value="1525" />
     <option name="height" value="1001" />
   </component>
@@ -269,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestJdbcAdv.testInvokeProcedure">
+  <component name="RunManager" selected="JUnit.TestJdbcAdv.testProductProcedure4">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -304,31 +304,6 @@
       <option name="PACKAGE_NAME" value="com.kaishengit.mapper" />
       <option name="MAIN_CLASS_NAME" value="com.kaishengit.mapper.MovieMapperTest" />
       <option name="METHOD_NAME" value="selectByOrRelationship" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="MovieMapperTest.selectByPrimaryKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.kaishengit.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="mybatisG" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.kaishengit.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.kaishengit.mapper.MovieMapperTest" />
-      <option name="METHOD_NAME" value="selectByPrimaryKey" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -404,6 +379,31 @@
       <option name="PACKAGE_NAME" value="com.ksit.jdbcc" />
       <option name="MAIN_CLASS_NAME" value="com.ksit.jdbcc.TestJdbcAdv" />
       <option name="METHOD_NAME" value="testInvokeProcedure" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestJdbcAdv.testProductProcedure4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ksit.jdbcc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mybatisG" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ksit.jdbcc" />
+      <option name="MAIN_CLASS_NAME" value="com.ksit.jdbcc.TestJdbcAdv" />
+      <option name="METHOD_NAME" value="testProductProcedure4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -501,19 +501,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Maven.MBG" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.selectByPrimaryKey" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.selectLsitByDirector" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.selectByOrRelationship" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.testMybatisPaging" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestJdbcAdv.testInvokeProcedure" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.selectLsitByDirector" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.selectByOrRelationship" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.testMybatisPaging" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestJdbcAdv.testInvokeProcedure" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestJdbcAdv.testProductProcedure4" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestJdbcAdv.testInvokeProcedure" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.testMybatisPaging" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.selectByOrRelationship" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.selectLsitByDirector" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.selectByPrimaryKey" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestJdbcAdv.testProductProcedure4" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestJdbcAdv.testInvokeProcedure" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.testMybatisPaging" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.selectByOrRelationship" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MovieMapperTest.selectLsitByDirector" />
       </list>
     </recent_temporary>
   </component>
@@ -532,47 +532,47 @@
       <updated>1522077386231</updated>
       <workItem from="1522077387749" duration="991000" />
       <workItem from="1522111932707" duration="7557000" />
-      <workItem from="1522153191719" duration="1845000" />
+      <workItem from="1522153191719" duration="6142000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MovieMapperTest_selectLsitByDirector - 2018.03.27 at 10h 27m 41s.xml">
-      <configuration name="MovieMapperTest.selectLsitByDirector" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieMapperTest_testMybatisPaging - 2018.03.27 at 11h 04m 58s.xml">
-      <configuration name="MovieMapperTest.testMybatisPaging" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieMapperTest_testMybatisPaging - 2018.03.27 at 11h 05m 30s.xml">
-      <configuration name="MovieMapperTest.testMybatisPaging" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieMapperTest_testMybatisPaging - 2018.03.27 at 11h 08m 11s.xml">
-      <configuration name="MovieMapperTest.testMybatisPaging" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieMapperTest_testMybatisPaging - 2018.03.27 at 11h 10m 12s.xml">
-      <configuration name="MovieMapperTest.testMybatisPaging" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieMapperTest_testMybatisPaging - 2018.03.27 at 11h 12m 30s.xml">
-      <configuration name="MovieMapperTest.testMybatisPaging" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieMapperTest_testMybatisPaging - 2018.03.27 at 11h 14m 11s.xml">
-      <configuration name="MovieMapperTest.testMybatisPaging" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieMapperTest_testMybatisPaging - 2018.03.27 at 11h 14m 26s.xml">
-      <configuration name="MovieMapperTest.testMybatisPaging" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestJdbcAdv_testInvokeProcedure - 2018.03.27 at 20h 34m 05s.xml">
-      <configuration name="TestJdbcAdv.testInvokeProcedure" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestJdbcAdv_testInvokeProcedure - 2018.03.27 at 20h 34m 44s.xml">
       <configuration name="TestJdbcAdv.testInvokeProcedure" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestJdbcAdv_testProductProcedure4 - 2018.03.27 at 22h 06m 04s.xml">
+      <configuration name="TestJdbcAdv.testProductProcedure4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJdbcAdv_testProductProcedure4 - 2018.03.27 at 22h 06m 28s.xml">
+      <configuration name="TestJdbcAdv.testProductProcedure4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJdbcAdv_testProductProcedure4 - 2018.03.27 at 22h 11m 15s.xml">
+      <configuration name="TestJdbcAdv.testProductProcedure4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJdbcAdv_testProductProcedure4 - 2018.03.27 at 22h 15m 54s.xml">
+      <configuration name="TestJdbcAdv.testProductProcedure4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJdbcAdv_testProductProcedure4 - 2018.03.27 at 22h 43m 24s.xml">
+      <configuration name="TestJdbcAdv.testProductProcedure4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJdbcAdv_testProductProcedure4 - 2018.03.27 at 22h 43m 35s.xml">
+      <configuration name="TestJdbcAdv.testProductProcedure4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJdbcAdv_testProductProcedure4 - 2018.03.27 at 22h 51m 43s.xml">
+      <configuration name="TestJdbcAdv.testProductProcedure4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJdbcAdv_testProductProcedure4 - 2018.03.27 at 22h 54m 15s.xml">
+      <configuration name="TestJdbcAdv.testProductProcedure4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJdbcAdv_testProductProcedure4 - 2018.03.27 at 23h 04m 21s.xml">
+      <configuration name="TestJdbcAdv.testProductProcedure4" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10393000" />
+    <option name="totallyTimeSpent" value="14690000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="297" y="41" width="1525" height="1001" extended-state="1" />
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -584,12 +584,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3340961" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40473628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22200133" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12060968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -702,8 +702,8 @@
         <state relative-caret-position="1580">
           <caret line="107" column="9" lean-forward="true" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
           <folding>
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
             <element signature="method#insert#0;class#MovieMapperTest#0" expanded="false" />
             <element signature="method#selectByExample#0;class#MovieMapperTest#0" expanded="false" />
             <element signature="method#selectByPrimaryKey#0;class#MovieMapperTest#0" expanded="false" />
@@ -823,8 +823,8 @@
         <state relative-caret-position="799">
           <caret line="109" column="18" lean-forward="true" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
           <folding>
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
             <element signature="method#insert#0;class#MovieMapperTest#0" expanded="false" />
             <element signature="method#selectByExample#0;class#MovieMapperTest#0" expanded="false" />
             <element signature="method#selectByPrimaryKey#0;class#MovieMapperTest#0" expanded="false" />
@@ -834,8 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/jdbcc/TestJdbcAdv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="316">
+          <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

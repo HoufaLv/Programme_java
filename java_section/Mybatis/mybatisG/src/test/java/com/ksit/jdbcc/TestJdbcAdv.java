@@ -36,4 +36,30 @@ public class TestJdbcAdv {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void testProductProcedure4(){
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql:///kaishengit_db", "root", "rootroot");
+
+            String sql = "{CALL ProductProcedure4(?,?,?)}";
+            CallableStatement callableStatement = connection.prepareCall(sql);
+            callableStatement.setString(1,"ANV01");
+            callableStatement.setString(2,"7.99");
+            callableStatement.registerOutParameter(3,Types.INTEGER);
+
+            callableStatement.executeUpdate();
+
+            int count = callableStatement.getInt(3);
+
+            System.out.println(count);
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
