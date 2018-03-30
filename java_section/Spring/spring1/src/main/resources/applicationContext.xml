@@ -1,17 +1,103 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:P="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!--region 将userDao 交给spring 来管理 别名为 userDao-->
     <bean id="userDao" class="com.ksit.dao.UserDao" init-method="init" lazy-init="true" scope="prototype"/>
     <alias name="userDao" alias="userDaoAlias"/>
+    <!--endregion-->
 
-
-    <bean id="studentDao" class="com.ksit.dao.StudentDao"></bean>
+    <!--region DI 对于StudentDao/StudentService 通过set注入-->
+    <!--<bean id="studentDao" class="com.ksit.dao.StudentDao"></bean>
     <bean id="studentService" class="com.ksit.service.StudentService">
         <property name="studentDao" ref="studentDao"></property>
-    </bean>
+    </bean>-->
+    <!--endregion-->
 
+    <!--region DI 对于StudentDao/StudentService 通过set注入第二种方式-->
+    <!--将 studetnDao 交给spring 来管理-->
+    <!--<bean id="studentDao" class="com.ksit.dao.StudentDao"></bean>
+    &lt;!&ndash;将 studentService 交给 spring 来管理&ndash;&gt;
+    <bean id="studentService" class="com.ksit.service.StudentService">
+    &lt;!&ndash;进行 set 注入,这个里面的name 是类中的 set 方法去掉 set 关键字后将首字母小写&ndash;&gt;
+        <property name="studentDao">
+            <ref bean="studentDao"/>
+        </property>
+    </bean>-->
+    <!--endregion-->
+
+    <!--region DI 对于StudentDao/StudentService 通过set注入第三种方式-->
+    <!--<bean id="studentDao" class="com.ksit.dao.StudentDao"></bean>
+    <bean id="studentService" class="com.ksit.service.StudentService">
+        <property name="studentDao">
+            <bean class="com.ksit.dao.StudentDao"></bean>
+        </property>
+    </bean>-->
+    <!--endregion-->
+
+    <!--region DI 对于StudentDao/StudentService 通过P 注入 schemal:xmlns:P="http://www.springframework.org/schema/p"-->
+    <!--<bean id="studentDao" class="com.ksit.dao.StudentDao"></bean>
+    <bean id="studentService" class="com.ksit.service.StudentService" P:studentDao-ref="studentDao" ></bean>-->
+    <!--endregion-->
+
+    <!--region 对于ProductDao/ProductService 通过构造方法注入-->
+    <!--<bean id="productDao" class="com.ksit.dao.ProductDao"></bean>
+    <bean id="productService" class="com.ksit.service.ProductService">
+        <constructor-arg name="productDao" ref="productDao"></constructor-arg>
+    </bean>-->
+    <!--endregion-->
+
+    <!--region 对于ProductDao/ProductService 通过构造方法注入第二种方式-->
+    <!--<bean id="productDao" class="com.ksit.dao.ProductDao"></bean>
+    <bean id="productService" class="com.ksit.service.ProductService">
+        <constructor-arg index="0" ref="productDao"></constructor-arg>
+    </bean>-->
+    <!--endregion-->
+
+    <!--region 对于ProductDao/ProductService 通过构造方法注入第三种方式-->
+    <!--<bean id="productDao" class="com.ksit.dao.ProductDao"></bean>
+    <bean id="productService" class="com.ksit.service.ProductService">
+        <constructor-arg type="com.ksit.dao.ProductDao" ref="productDao"></constructor-arg>
+    </bean>-->
+    <!--endregion-->
+
+    <!--region 对于ProductDao/ProductService 通过自动注入-->
+    <!--自动注入也需要无参的构造函数-->
+    <!--autowire 属性也可以写 byType-->
+    <bean id="productDao" class="com.ksit.dao.ProductDao"></bean>
+    <bean id="productService" class="com.ksit.service.ProductService" autowire="byName"></bean>
+    <!--endregion-->
+
+    <!--region 对于基本数据类型的注入-->
+    <bean id="basicTypeService" class="com.ksit.service.BasicTypeService">
+        <property name="id" value="123123"></property>
+        <property name="nameList">
+            <list>
+                <value>tom</value>
+                <value>jack</value>
+            </list>
+        </property>
+        <property name="nameSet">
+            <set>
+                <value>set1</value>
+                <value>set3</value>
+            </set>
+        </property>
+        <property name="nameMap">
+            <map>
+                <entry key="entry1" value-ref="productDao"></entry>
+                <entry key="entry2" value-ref="productDao"></entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="key1">key1</prop>
+                <prop key="key2">key2</prop>
+            </props>
+        </property>
+    </bean>
+    <!--endregion -->
 </beans>
