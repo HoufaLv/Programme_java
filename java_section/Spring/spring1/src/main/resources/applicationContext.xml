@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDao" class="com.ksit.dao.UserDao" init-method="init" lazy-init="true" scope="prototype"/>
+    <alias name="userDao" alias="userDaoAlias"/>
+
+
+    <bean id="studentDao" class="com.ksit.dao.StudentDao"></bean>
+    <bean id="studentService" class="com.ksit.service.StudentService">
+        <property name="studentDao" ref="studentDao"></property>
+    </bean>
+
+</beans>

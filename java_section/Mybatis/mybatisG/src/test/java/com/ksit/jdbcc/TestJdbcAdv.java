@@ -53,13 +53,10 @@ public class TestJdbcAdv {
 
             int count = callableStatement.getInt(3);
 
-            System.out.println(count);
-
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
 }
