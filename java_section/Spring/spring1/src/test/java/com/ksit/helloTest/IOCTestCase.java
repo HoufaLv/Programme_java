@@ -1,5 +1,6 @@
 package com.ksit.helloTest;
 
+import com.ksit.service.AccountServicve;
 import com.ksit.service.BasicTypeService;
 import com.ksit.service.ProductService;
 import com.ksit.service.StudentService;
@@ -34,7 +35,11 @@ public class IOCTestCase {
     public void testBasicTypeService(){
         BasicTypeService basicTypeService = (BasicTypeService) applicationContext.getBean("basicTypeService");
         basicTypeService.showData();
-
     }
 
+    @Test
+    public void testAccountService(){
+        AccountServicve accountServicve = (AccountServicve) applicationContext.getBean("accountService");
+        accountServicve.accountDaoInsert();
+    }
 }

@@ -18,8 +18,8 @@
     <!--endregion-->
 
     <!--region DI 对于StudentDao/StudentService 通过set注入第二种方式-->
-    <!--将 studetnDao 交给spring 来管理-->
-    <!--<bean id="studentDao" class="com.ksit.dao.StudentDao"></bean>
+    <!--&lt;!&ndash;将 studetnDao 交给spring 来管理&ndash;&gt;
+    <bean id="studentDao" class="com.ksit.dao.StudentDao"></bean>
     &lt;!&ndash;将 studentService 交给 spring 来管理&ndash;&gt;
     <bean id="studentService" class="com.ksit.service.StudentService">
     &lt;!&ndash;进行 set 注入,这个里面的name 是类中的 set 方法去掉 set 关键字后将首字母小写&ndash;&gt;
@@ -100,4 +100,12 @@
         </property>
     </bean>
     <!--endregion -->
+
+    <!--region 对于AccountDao/AccountService 通过set注入-->
+    <bean id="accountDao" class="com.ksit.dao.AccountDao"></bean>
+    <bean id="accountService" class="com.ksit.service.AccountServicve">
+        <property name="accountDao" ref="accountDao"></property>
+    </bean>
+    <!--endregion-->
+
 </beans>
