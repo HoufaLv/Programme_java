@@ -80,8 +80,8 @@
       <file leaf-file-name="Mp3AdProxyTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3AdProxyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="519">
+              <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -238,6 +238,14 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="javaseTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaseTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -276,9 +284,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Mp3AdProxyTest.testMp3AdProxy">
+  <component name="RunManager" selected="JUnit.Mp3AdProxyTest.testJdkProxy">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Mp3AdProxyTest.testJdkProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaseTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ksit.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ksit.proxy" />
+      <option name="MAIN_CLASS_NAME" value="com.ksit.proxy.Mp3AdProxyTest" />
+      <option name="METHOD_NAME" value="testJdkProxy" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="Mp3AdProxyTest.testMp3AdProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaseTest" />
@@ -367,9 +398,11 @@
     <list>
       <item itemvalue="JUnit.Mp3LogProxyTest.testMa3LogProxy" />
       <item itemvalue="JUnit.Mp3AdProxyTest.testMp3AdProxy" />
+      <item itemvalue="JUnit.Mp3AdProxyTest.testJdkProxy" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Mp3AdProxyTest.testJdkProxy" />
         <item itemvalue="JUnit.Mp3AdProxyTest.testMp3AdProxy" />
         <item itemvalue="JUnit.Mp3LogProxyTest.testMa3LogProxy" />
       </list>
@@ -386,7 +419,7 @@
       <option name="presentableId" value="Default" />
       <updated>1522417374265</updated>
       <workItem from="1522417375914" duration="2646000" />
-      <workItem from="1522451796041" duration="4306000" />
+      <workItem from="1522451796041" duration="6854000" />
     </task>
     <servers />
   </component>
@@ -403,9 +436,12 @@
     <history-entry file="Mp3AdProxyTest_testMp3AdProxy - 2018.03.31 at 17h 01m 59s.xml">
       <configuration name="Mp3AdProxyTest.testMp3AdProxy" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Mp3AdProxyTest_testJdkProxy - 2018.04.01 at 18h 57m 29s.xml">
+      <configuration name="Mp3AdProxyTest.testJdkProxy" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6952000" />
+    <option name="totallyTimeSpent" value="9500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="32" width="1753" height="954" extended-state="6" />
@@ -421,7 +457,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29674307" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18455972" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -561,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3AdProxyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="519">
+          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
