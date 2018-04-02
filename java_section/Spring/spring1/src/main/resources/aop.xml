@@ -18,14 +18,16 @@
         <aop:aspect ref="myAdvice">
             <!--切面表达式-->
             <aop:pointcut id="pointcut" expression="execution(* com.ksit.proxy..*.*(..))"/>
-            <!--前置通知-->
+            <!--&lt;!&ndash;前置通知&ndash;&gt;
             <aop:before method="beforeAdvice" pointcut-ref="pointcut"/>
-            <!--后置通知-->
+            &lt;!&ndash;后置通知&ndash;&gt;
             <aop:after-returning method="afterAdvice" pointcut-ref="pointcut" returning="result"/>
-            <!--异常通知-->
+            &lt;!&ndash;异常通知&ndash;&gt;
             <aop:after-throwing method="exceptionAdive" pointcut-ref="pointcut" throwing="ex"/>
-            <!--最终通知-->
-            <aop:after method="finalAdvice" pointcut-ref="pointcut"/>
+            &lt;!&ndash;最终通知&ndash;&gt;
+            <aop:after method="finalAdvice" pointcut-ref="pointcut"/>-->
+            <!--环绕通知-->
+            <aop:around method="aroundAdvice" pointcut-ref="pointcut"/>
         </aop:aspect>
     </aop:config>
 </beans>
