@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aop.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aop.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/aop.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="27" column="72" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="27" selection-end-column="72" />
+            <state relative-caret-position="221">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -50,7 +50,7 @@
       <file leaf-file-name="MyAdvice.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/aop/MyAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="154">
               <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -67,25 +67,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mp3Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3Test.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="309">
+              <caret line="76" column="21" lean-forward="true" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#757#769#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Mp3Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+            <state relative-caret-position="174">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
-                <element signature="e#757#769#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,10 +156,10 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="492" />
-    <option name="y" value="59" />
-    <option name="width" value="1406" />
-    <option name="height" value="980" />
+    <option name="x" value="515" />
+    <option name="y" value="47" />
+    <option name="width" value="1407" />
+    <option name="height" value="998" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -243,15 +243,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ksit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring1" type="b2602c69:ProjectViewProjectNode" />
@@ -538,14 +529,11 @@
       <workItem from="1522336146733" duration="717000" />
       <workItem from="1522369749838" duration="13542000" />
       <workItem from="1522417382623" duration="1479000" />
-      <workItem from="1522451801688" duration="13711000" />
+      <workItem from="1522451801688" duration="14517000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Mp3Test_testAOP - 2018.04.02 at 16h 33m 47s.xml">
-      <configuration name="Mp3Test.testAOP" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Mp3Test_testAOP - 2018.04.02 at 16h 34m 44s.xml">
       <configuration name="Mp3Test.testAOP" configurationId="JUnit" />
     </history-entry>
@@ -573,12 +561,15 @@
     <history-entry file="Mp3Test_testAOP - 2018.04.02 at 16h 52m 12s.xml">
       <configuration name="Mp3Test.testAOP" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Mp3Test_testAOP - 2018.04.02 at 17h 11m 00s.xml">
+      <configuration name="Mp3Test.testAOP" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35823000" />
+    <option name="totallyTimeSpent" value="36629000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="460" y="62" width="1273" height="887" extended-state="0" />
+    <frame x="467" y="43" width="1274" height="903" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -591,12 +582,12 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2965879" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29048842" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" x="1101" y="260" width="321" height="593" id="Project" order="0" sideWeight="0.49867022" visible="true" weight="0.25416997" />
+      <window_info active="true" content_ui="combo" x="1101" y="260" width="321" height="593" id="Project" order="0" sideWeight="0.49867022" visible="true" weight="0.25396827" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1147,26 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-          <folding>
-            <element signature="e#757#769#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1187,9 +1158,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/aop.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/aop/MyAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="154">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1205,10 +1183,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/aop.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="27" column="72" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="27" selection-end-column="72" />
+        <state relative-caret-position="174">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="76" column="21" lean-forward="true" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+          <folding>
+            <element signature="e#757#769#0" />
+          </folding>
         </state>
       </provider>
     </entry>
