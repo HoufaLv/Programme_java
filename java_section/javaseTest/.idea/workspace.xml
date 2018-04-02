@@ -13,48 +13,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/Player.java">
+      <file leaf-file-name="MyInvoketionHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/MyInvoketionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mp3.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/Mp3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="154">
+              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
-                <element signature="e#120#121#0" expanded="true" />
-                <element signature="e#166#167#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mp3LogProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/Mp3LogProxy.java">
+      <file leaf-file-name="Mp3AdProxyTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3AdProxyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-              <folding>
-                <element signature="e#168#169#0" expanded="true" />
-                <element signature="e#204#205#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mp3LogProxyTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3LogProxyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="167">
+              <caret line="31" column="96" lean-forward="true" selection-start-line="31" selection-start-column="96" selection-end-line="31" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,26 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mp3AdProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/Mp3AdProxy.java">
+      <file leaf-file-name="Mp3MyInvoketionHandlerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3MyInvoketionHandlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-              <folding>
-                <element signature="e#156#157#0" expanded="true" />
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mp3AdProxyTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3AdProxyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+            <state relative-caret-position="198">
+              <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,8 +56,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -112,6 +74,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3LogProxyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/Mp3AdProxy.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3AdProxyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/MyInvoketionHandler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3MyInvoketionHandlerTest.java" />
       </list>
     </option>
   </component>
@@ -144,11 +108,11 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="133" />
-    <option name="y" value="162" />
-    <option name="width" value="1466" />
-    <option name="height" value="903" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="312" />
+    <option name="y" value="101" />
+    <option name="width" value="1607" />
+    <option name="height" value="989" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -284,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Mp3AdProxyTest.testJdkProxy">
+  <component name="RunManager" selected="JUnit.Mp3MyInvoketionHandlerTest.testMyInvoketionHandler">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -357,6 +321,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="Mp3MyInvoketionHandlerTest.testMyInvoketionHandler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaseTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ksit.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ksit.proxy" />
+      <option name="MAIN_CLASS_NAME" value="com.ksit.proxy.Mp3MyInvoketionHandlerTest" />
+      <option name="METHOD_NAME" value="testMyInvoketionHandler" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -399,9 +386,11 @@
       <item itemvalue="JUnit.Mp3LogProxyTest.testMa3LogProxy" />
       <item itemvalue="JUnit.Mp3AdProxyTest.testMp3AdProxy" />
       <item itemvalue="JUnit.Mp3AdProxyTest.testJdkProxy" />
+      <item itemvalue="JUnit.Mp3MyInvoketionHandlerTest.testMyInvoketionHandler" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Mp3MyInvoketionHandlerTest.testMyInvoketionHandler" />
         <item itemvalue="JUnit.Mp3AdProxyTest.testJdkProxy" />
         <item itemvalue="JUnit.Mp3AdProxyTest.testMp3AdProxy" />
         <item itemvalue="JUnit.Mp3LogProxyTest.testMa3LogProxy" />
@@ -419,7 +408,7 @@
       <option name="presentableId" value="Default" />
       <updated>1522417374265</updated>
       <workItem from="1522417375914" duration="2646000" />
-      <workItem from="1522451796041" duration="6854000" />
+      <workItem from="1522451796041" duration="8933000" />
     </task>
     <servers />
   </component>
@@ -439,12 +428,21 @@
     <history-entry file="Mp3AdProxyTest_testJdkProxy - 2018.04.01 at 18h 57m 29s.xml">
       <configuration name="Mp3AdProxyTest.testJdkProxy" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Mp3AdProxyTest_testJdkProxy - 2018.04.01 at 20h 58m 02s.xml">
+      <configuration name="Mp3AdProxyTest.testJdkProxy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Mp3MyInvoketionHandlerTest_testMyInvoketionHandler - 2018.04.01 at 22h 41m 14s.xml">
+      <configuration name="Mp3MyInvoketionHandlerTest.testMyInvoketionHandler" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Mp3MyInvoketionHandlerTest_testMyInvoketionHandler - 2018.04.01 at 22h 46m 02s.xml">
+      <configuration name="Mp3MyInvoketionHandlerTest.testMyInvoketionHandler" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9500000" />
+    <option name="totallyTimeSpent" value="11579000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="32" width="1753" height="954" extended-state="6" />
+    <frame x="244" y="72" width="1455" height="895" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -457,11 +455,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18455972" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33246753" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17366302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3164469" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -541,34 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/Mp3LogProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3LogProxyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/Mp3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -582,9 +552,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/reflect/InvocationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/Mp3LogProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/Mp3AdProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="122">
           <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
           <folding>
             <element signature="e#156#157#0" expanded="true" />
@@ -595,10 +590,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3LogProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/reflect/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="702" column="25" selection-start-line="702" selection-start-column="25" selection-end-line="702" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/MyInvoketionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3AdProxyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+        <state relative-caret-position="167">
+          <caret line="31" column="96" lean-forward="true" selection-start-line="31" selection-start-column="96" selection-end-line="31" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3MyInvoketionHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
