@@ -52,7 +52,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="133" />
-    <option name="y" value="162" />
+    <option name="y" value="142" />
     <option name="width" value="1466" />
     <option name="height" value="903" />
   </component>
@@ -194,7 +194,7 @@
     <option name="totallyTimeSpent" value="737000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="121" y="147" width="1327" height="817" extended-state="1" />
+    <frame x="121" y="129" width="1327" height="817" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />

@@ -18,18 +18,23 @@
     </properties>
 
     <dependencies>
+        <!--region junit-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit-version}</version>
         </dependency>
+        <!--endregion-->
 
+        <!--region spring-context-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>4.3.14.RELEASE</version>
         </dependency>
+        <!--endregion-->
 
+        <!--region 日志-->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -41,6 +46,20 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j-version}</version>
         </dependency>
+        <!--endregion-->
+
+        <!--region spring AOP-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${spring-context-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring-context-version}</version>
+        </dependency>
+        <!--endregion-->
 
     </dependencies>
     <build>

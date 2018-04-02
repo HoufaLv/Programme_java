@@ -12,41 +12,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MyInvoketionHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/MyInvoketionHandler.java">
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+              <folding>
+                <element signature="e#475#486#0" />
+                <element signature="e#687#699#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaleProxy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/cglib/SaleProxy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#270#271#0" expanded="true" />
-              </folding>
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mp3AdProxyTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3AdProxyTest.java">
+      <file leaf-file-name="Sales.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/cglib/Sales.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="31" column="96" lean-forward="true" selection-start-line="31" selection-start-column="96" selection-end-line="31" selection-end-column="96" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="132">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mp3MyInvoketionHandlerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3MyInvoketionHandlerTest.java">
+      <file leaf-file-name="SaleProxyTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/cglib/SaleProxyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="836">
+              <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -56,15 +58,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ksit/design/BankSingleton1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ksit/design/BankSingleton2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ksit/staticStep/Person.java" />
@@ -74,8 +75,14 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3LogProxyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/Mp3AdProxy.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3AdProxyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/MyInvoketionHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3MyInvoketionHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/MyInvoketionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/MyInvocation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3MyInvocationTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/cglib/SaleProxy.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ksit/proxy/cglib/SaleProxyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/cglib/Sales.java" />
       </list>
     </option>
   </component>
@@ -109,10 +116,10 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="312" />
-    <option name="y" value="101" />
+    <option name="x" value="-30" />
+    <option name="y" value="70" />
     <option name="width" value="1607" />
-    <option name="height" value="989" />
+    <option name="height" value="1037" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -187,7 +194,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="cglib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javaseTest" type="b2602c69:ProjectViewProjectNode" />
@@ -209,6 +216,14 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaseTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaseTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cglib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -230,6 +245,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ksit.proxy.cglib" />
       <recent name="com.ksit.proxy" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -248,7 +264,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Mp3MyInvoketionHandlerTest.testMyInvoketionHandler">
+  <component name="RunManager" selected="JUnit.SaleProxyTest.testCGlib">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -298,7 +314,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Mp3LogProxyTest.testMa3LogProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Mp3MyInvocationTest.testMyInnocationHandler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaseTest" />
       <extension name="coverage">
         <pattern>
@@ -309,8 +325,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.ksit.proxy" />
-      <option name="MAIN_CLASS_NAME" value="com.ksit.proxy.Mp3LogProxyTest" />
-      <option name="METHOD_NAME" value="testMa3LogProxy" />
+      <option name="MAIN_CLASS_NAME" value="com.ksit.proxy.Mp3MyInvocationTest" />
+      <option name="METHOD_NAME" value="testMyInnocationHandler" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -321,19 +337,42 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Mp3MyInvoketionHandlerTest.testMyInvoketionHandler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaleProxyTest.sale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaseTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ksit.proxy.*" />
+          <option name="PATTERN" value="com.ksit.proxy.cglib.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ksit.proxy" />
-      <option name="MAIN_CLASS_NAME" value="com.ksit.proxy.Mp3MyInvoketionHandlerTest" />
-      <option name="METHOD_NAME" value="testMyInvoketionHandler" />
+      <option name="PACKAGE_NAME" value="com.ksit.proxy.cglib" />
+      <option name="MAIN_CLASS_NAME" value="com.ksit.proxy.cglib.SaleProxyTest" />
+      <option name="METHOD_NAME" value="sale" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SaleProxyTest.testCGlib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaseTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ksit.proxy.cglib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ksit.proxy.cglib" />
+      <option name="MAIN_CLASS_NAME" value="com.ksit.proxy.cglib.SaleProxyTest" />
+      <option name="METHOD_NAME" value="testCGlib" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -383,17 +422,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Mp3LogProxyTest.testMa3LogProxy" />
       <item itemvalue="JUnit.Mp3AdProxyTest.testMp3AdProxy" />
       <item itemvalue="JUnit.Mp3AdProxyTest.testJdkProxy" />
-      <item itemvalue="JUnit.Mp3MyInvoketionHandlerTest.testMyInvoketionHandler" />
+      <item itemvalue="JUnit.Mp3MyInvocationTest.testMyInnocationHandler" />
+      <item itemvalue="JUnit.SaleProxyTest.sale" />
+      <item itemvalue="JUnit.SaleProxyTest.testCGlib" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Mp3MyInvoketionHandlerTest.testMyInvoketionHandler" />
+        <item itemvalue="JUnit.SaleProxyTest.testCGlib" />
+        <item itemvalue="JUnit.SaleProxyTest.sale" />
+        <item itemvalue="JUnit.Mp3MyInvocationTest.testMyInnocationHandler" />
         <item itemvalue="JUnit.Mp3AdProxyTest.testJdkProxy" />
         <item itemvalue="JUnit.Mp3AdProxyTest.testMp3AdProxy" />
-        <item itemvalue="JUnit.Mp3LogProxyTest.testMa3LogProxy" />
       </list>
     </recent_temporary>
   </component>
@@ -408,78 +449,119 @@
       <option name="presentableId" value="Default" />
       <updated>1522417374265</updated>
       <workItem from="1522417375914" duration="2646000" />
-      <workItem from="1522451796041" duration="8933000" />
+      <workItem from="1522451796041" duration="13795000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Mp3LogProxyTest_testMa3LogProxy - 2018.03.31 at 16h 52m 52s.xml">
-      <configuration name="Mp3LogProxyTest.testMa3LogProxy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Mp3LogProxyTest_testMa3LogProxy - 2018.03.31 at 16h 53m 55s.xml">
-      <configuration name="Mp3LogProxyTest.testMa3LogProxy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Mp3LogProxyTest_testMa3LogProxy - 2018.03.31 at 16h 56m 03s.xml">
-      <configuration name="Mp3LogProxyTest.testMa3LogProxy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Mp3AdProxyTest_testMp3AdProxy - 2018.03.31 at 17h 01m 59s.xml">
-      <configuration name="Mp3AdProxyTest.testMp3AdProxy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Mp3AdProxyTest_testJdkProxy - 2018.04.01 at 18h 57m 29s.xml">
-      <configuration name="Mp3AdProxyTest.testJdkProxy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Mp3AdProxyTest_testJdkProxy - 2018.04.01 at 20h 58m 02s.xml">
-      <configuration name="Mp3AdProxyTest.testJdkProxy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Mp3MyInvoketionHandlerTest_testMyInvoketionHandler - 2018.04.01 at 22h 41m 14s.xml">
+    <history-entry file="Mp3MyInvoketionHandlerTest_testMyInvoketionHandler - 2018.04.02 at 08h 30m 59s.xml">
       <configuration name="Mp3MyInvoketionHandlerTest.testMyInvoketionHandler" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Mp3MyInvoketionHandlerTest_testMyInvoketionHandler - 2018.04.01 at 22h 46m 02s.xml">
-      <configuration name="Mp3MyInvoketionHandlerTest.testMyInvoketionHandler" configurationId="JUnit" />
+    <history-entry file="Mp3MyInvocationTest_testMyInnocationHandler - 2018.04.02 at 08h 33m 35s.xml">
+      <configuration name="Mp3MyInvocationTest.testMyInnocationHandler" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Mp3MyInvocationTest_testMyInnocationHandler - 2018.04.02 at 09h 31m 09s.xml">
+      <configuration name="Mp3MyInvocationTest.testMyInnocationHandler" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleProxyTest_sale - 2018.04.02 at 10h 44m 48s.xml">
+      <configuration name="SaleProxyTest.sale" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleProxyTest_testCGlib - 2018.04.02 at 10h 57m 40s.xml">
+      <configuration name="SaleProxyTest.testCGlib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleProxyTest_testCGlib - 2018.04.02 at 11h 00m 29s.xml">
+      <configuration name="SaleProxyTest.testCGlib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleProxyTest_testCGlib - 2018.04.02 at 11h 01m 37s.xml">
+      <configuration name="SaleProxyTest.testCGlib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleProxyTest_testCGlib - 2018.04.02 at 11h 05m 19s.xml">
+      <configuration name="SaleProxyTest.testCGlib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleProxyTest_testCGlib - 2018.04.02 at 11h 06m 22s.xml">
+      <configuration name="SaleProxyTest.testCGlib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleProxyTest_testCGlib - 2018.04.02 at 11h 06m 42s.xml">
+      <configuration name="SaleProxyTest.testCGlib" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11579000" />
+    <option name="totallyTimeSpent" value="16441000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="244" y="72" width="1455" height="895" extended-state="0" />
+    <frame x="-27" y="64" width="1455" height="939" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33246753" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3164469" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.11302211" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24011104" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.19782871" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19896492" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -529,13 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -607,10 +682,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/MyInvoketionHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3AdProxyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="177">
+          <caret line="31" column="96" selection-start-line="31" selection-start-column="96" selection-end-line="31" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/MyInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#234#235#0" expanded="true" />
@@ -619,22 +704,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3AdProxyTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3MyInvocationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="31" column="96" lean-forward="true" selection-start-line="31" selection-start-column="96" selection-end-line="31" selection-end-column="96" />
+        <state relative-caret-position="264">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3MyInvoketionHandlerTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/cglib/cglib/3.2.4/cglib-3.2.4.jar!/net/sf/cglib/proxy/Callback.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+        <state relative-caret-position="88">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cglib/cglib/3.2.4/cglib-3.2.4-sources.jar!/net/sf/cglib/proxy/Callback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/cglib/SaleProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/cglib/Sales.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/cglib/SaleProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#475#486#0" />
+            <element signature="e#687#699#0" />
           </folding>
         </state>
       </provider>

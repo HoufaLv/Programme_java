@@ -3,11 +3,11 @@ package com.ksit.proxy;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-public class MyInvoketionHandler implements InvocationHandler {
+public class MyInvocation implements InvocationHandler {
 
     Object target;
 
-    public MyInvoketionHandler(Object target) {
+    public MyInvocation(Object target) {
         this.target = target;
     }
 
