@@ -12,15 +12,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+            <state relative-caret-position="462">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#475#486#0" />
                 <element signature="e#687#699#0" />
+                <element signature="e#901#913#0" />
+                <element signature="e#1131#1145#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbHelp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/jdbc/DbHelp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbHelpTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/jdbc/DbHelpTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding>
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#454#455#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,7 +74,7 @@
       <file leaf-file-name="SaleProxyTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/cglib/SaleProxyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
+            <state relative-caret-position="1100">
               <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
             </state>
           </provider>
@@ -79,10 +106,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/MyInvoketionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/MyInvocation.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ksit/proxy/Mp3MyInvocationTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/cglib/SaleProxy.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ksit/proxy/cglib/SaleProxyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ksit/proxy/cglib/Sales.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ksit/jdbc/DbHelp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ksit/jdbc/DbHelpTest.java" />
       </list>
     </option>
   </component>
@@ -115,11 +144,11 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-30" />
-    <option name="y" value="70" />
-    <option name="width" value="1607" />
-    <option name="height" value="1037" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="255" />
+    <option name="y" value="50" />
+    <option name="width" value="1608" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -192,6 +221,30 @@
               <item name="javaseTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaseTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ksit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaseTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaseTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ksit" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaseTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaseTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaseTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaseTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -200,14 +253,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaseTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaseTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -229,11 +274,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ksit.jdbc" />
       <recent name="com.ksit.proxy.cglib" />
       <recent name="com.ksit.proxy" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\GitHub\Programme\java\java_section\javaseTest\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -248,23 +297,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SaleProxyTest.testCGlib">
+  <component name="RunManager" selected="JUnit.DbHelpTest.commonQuery">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="Mp3AdProxyTest.testJdkProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DbHelpTest.commonQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaseTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ksit.proxy.*" />
+          <option name="PATTERN" value="com.ksit.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ksit.proxy" />
-      <option name="MAIN_CLASS_NAME" value="com.ksit.proxy.Mp3AdProxyTest" />
-      <option name="METHOD_NAME" value="testJdkProxy" />
+      <option name="PACKAGE_NAME" value="com.ksit.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.ksit.jdbc.DbHelpTest" />
+      <option name="METHOD_NAME" value="commonQuery" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -275,19 +324,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Mp3AdProxyTest.testMp3AdProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DbHelpTest.returnConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaseTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ksit.proxy.*" />
+          <option name="PATTERN" value="com.ksit.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ksit.proxy" />
-      <option name="MAIN_CLASS_NAME" value="com.ksit.proxy.Mp3AdProxyTest" />
-      <option name="METHOD_NAME" value="testMp3AdProxy" />
+      <option name="PACKAGE_NAME" value="com.ksit.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.ksit.jdbc.DbHelpTest" />
+      <option name="METHOD_NAME" value="returnConnection" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -406,19 +455,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Mp3AdProxyTest.testMp3AdProxy" />
-      <item itemvalue="JUnit.Mp3AdProxyTest.testJdkProxy" />
       <item itemvalue="JUnit.Mp3MyInvocationTest.testMyInnocationHandler" />
       <item itemvalue="JUnit.SaleProxyTest.sale" />
       <item itemvalue="JUnit.SaleProxyTest.testCGlib" />
+      <item itemvalue="JUnit.DbHelpTest.returnConnection" />
+      <item itemvalue="JUnit.DbHelpTest.commonQuery" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DbHelpTest.commonQuery" />
+        <item itemvalue="JUnit.DbHelpTest.returnConnection" />
         <item itemvalue="JUnit.SaleProxyTest.testCGlib" />
         <item itemvalue="JUnit.SaleProxyTest.sale" />
         <item itemvalue="JUnit.Mp3MyInvocationTest.testMyInnocationHandler" />
-        <item itemvalue="JUnit.Mp3AdProxyTest.testJdkProxy" />
-        <item itemvalue="JUnit.Mp3AdProxyTest.testMp3AdProxy" />
       </list>
     </recent_temporary>
   </component>
@@ -433,17 +482,12 @@
       <option name="presentableId" value="Default" />
       <updated>1522417374265</updated>
       <workItem from="1522417375914" duration="2646000" />
-      <workItem from="1522451796041" duration="13795000" />
+      <workItem from="1522451796041" duration="15144000" />
+      <workItem from="1522722023630" duration="30000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Mp3MyInvoketionHandlerTest_testMyInvoketionHandler - 2018.04.02 at 08h 30m 59s.xml">
-      <configuration name="Mp3MyInvoketionHandlerTest.testMyInvoketionHandler" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Mp3MyInvocationTest_testMyInnocationHandler - 2018.04.02 at 08h 33m 35s.xml">
-      <configuration name="Mp3MyInvocationTest.testMyInnocationHandler" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Mp3MyInvocationTest_testMyInnocationHandler - 2018.04.02 at 09h 31m 09s.xml">
       <configuration name="Mp3MyInvocationTest.testMyInnocationHandler" configurationId="JUnit" />
     </history-entry>
@@ -468,17 +512,22 @@
     <history-entry file="SaleProxyTest_testCGlib - 2018.04.02 at 11h 06m 42s.xml">
       <configuration name="SaleProxyTest.testCGlib" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DbHelpTest_returnConnection - 2018.04.03 at 08h 28m 34s.xml">
+      <configuration name="DbHelpTest.returnConnection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DbHelpTest_commonQuery - 2018.04.03 at 08h 29m 28s.xml">
+      <configuration name="DbHelpTest.commonQuery" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16441000" />
+    <option name="totallyTimeSpent" value="17820000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-27" y="64" width="1455" height="939" extended-state="1" />
+    <frame x="231" y="46" width="1456" height="940" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -486,11 +535,11 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.11302211" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.31572482" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24011104" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24011104" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -504,34 +553,35 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Messages" order="0" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.19782871" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Messages" order="0" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19896492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
@@ -550,6 +600,61 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#475#486#0" />
+            <element signature="e#687#699#0" />
+            <element signature="e#901#913#0" />
+            <element signature="e#1131#1145#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/jdbc/DbHelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/cglib/SaleProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/proxy/cglib/Sales.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/cglib/SaleProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/jdbc/DbHelpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
@@ -566,10 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -584,10 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,12 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -629,10 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -640,12 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -653,9 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,9 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="31" column="96" selection-start-line="31" selection-start-column="96" selection-end-line="31" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,11 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,9 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,18 +795,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/proxy/cglib/SaleProxyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
+        <state relative-caret-position="1100">
           <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="462">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#475#486#0" />
             <element signature="e#687#699#0" />
+            <element signature="e#901#913#0" />
+            <element signature="e#1131#1145#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ksit/jdbc/DbHelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ksit/jdbc/DbHelpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
           </folding>
         </state>
       </provider>

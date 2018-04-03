@@ -27,6 +27,23 @@
             <version>3.2.4</version>
         </dependency>
         <!--endregion-->
+
+        <!--region mysql-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.40</version>
+        </dependency>
+        <!--endregion-->
+
+        <!--region dbUtils-->
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.6</version>
+        </dependency>
+        <!--endregion-->
+
     </dependencies>
 
 

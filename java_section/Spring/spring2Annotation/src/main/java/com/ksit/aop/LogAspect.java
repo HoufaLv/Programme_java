@@ -2,6 +2,7 @@ package com.ksit.aop;
 
 import org.aopalliance.intercept.Joinpoint;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
@@ -12,8 +13,6 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class LogAspect {
-
-
     /**
      * 配置切入点
      */
@@ -42,6 +41,22 @@ public class LogAspect {
     @After(value = "pointCut()")
     public void afterAdvice(JoinPoint joinPoint){
         System.out.println("LogAspect.afterAdvice" + joinPoint.getSignature().getName());
+    }
+
+    @Around(value = "pointCut()")
+    public Object aroundAdvice(ProceedingJoinPoint joinPoint){
+        Object object = null;
+        try {
+            System.out.println("前置通知");
+            joinPoint.proceed();
+            System.out.println("后置通知");
+        } catch (Throwable throwable) {
+            System.out.println("异常通知");
+            throwable.printStackTrace();
+        } finally {
+            System.out.println("最终通知");
+        }
+        return null;
     }
 
 }
