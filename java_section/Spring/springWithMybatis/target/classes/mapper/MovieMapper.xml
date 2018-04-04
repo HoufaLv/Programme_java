@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ksit.mapper.MovieMapper">
+    <insert id="insertMovie">
+       INSERT INTO movie (
+            title,
+            rate,
+            release_year,
+            send_time,
+            director,
+            description
+        )
+        VALUES
+            (
+                #{title},#{rate},#{releaseYear},#{sendTime},#{director},#{description})
+
+    </insert>
+    <insert id="insertBatch" parameterType="list">
+      insert into movie (title,
+            rate,
+            release_year,
+            send_time,
+            director,
+            description)
+      values 
+      <foreach collection="list" item="movie" separator=",">
+          (#{movie.title},#{movie.rate},#{movie.releaseYear},#{movie.sendTime},#{movie.director},#{movie.description})
+      </foreach>
+    </insert>
+    <update id="updateMovie">
+        update movie set  title=#{title},rate=#{rate},release_year=#{releaseYear},send_time=#{sendTime},director=#{director},description=#{description} where id = #{id};
+    </update>
+
+    <select id="selectById" resultType="com.ksit.entity.Movie">
+        select * from movie where id = #{id}
+    </select>
+    <select id="selectAll" resultType="com.ksit.entity.Movie">
+        select * from  movie;
+    </select>
+</mapper>

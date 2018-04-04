@@ -23,8 +23,8 @@ public class MessageServiceTest {
     public void insert() {
 
         messageService.insert(Arrays.asList(
-                new Message("Message1T"),
-                new Message("Message2T")
+                new Message("Message3T"),
+                new Message()
         ));
     }
 }

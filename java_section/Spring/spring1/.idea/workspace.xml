@@ -52,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
-              <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+              <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
               <folding>
                 <element signature="e#757#769#0" />
                 <element signature="e#982#1003#0" />
@@ -139,9 +139,9 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="569" />
-    <option name="y" value="83" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="450" />
+    <option name="y" value="68" />
     <option name="width" value="1408" />
     <option name="height" value="999" />
   </component>
@@ -514,7 +514,7 @@
       <workItem from="1522369749838" duration="13542000" />
       <workItem from="1522417382623" duration="1479000" />
       <workItem from="1522451801688" duration="14517000" />
-      <workItem from="1522722049662" duration="754000" />
+      <workItem from="1522722049662" duration="1379000" />
     </task>
     <servers />
   </component>
@@ -551,10 +551,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37383000" />
+    <option name="totallyTimeSpent" value="38008000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="32" width="1753" height="954" extended-state="7" />
+    <frame x="408" y="62" width="1275" height="904" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -570,7 +571,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" x="1101" y="260" width="321" height="593" id="Project" order="0" sideWeight="0.49867022" visible="true" weight="0.18991098" />
+      <window_info active="true" content_ui="combo" x="1101" y="260" width="321" height="593" id="Project" order="0" sideWeight="0.49867022" visible="true" weight="0.26512012" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1075,7 +1076,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
-          <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
           <folding>
             <element signature="e#757#769#0" />
             <element signature="e#982#1003#0" />
