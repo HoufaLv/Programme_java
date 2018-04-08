@@ -15,4 +15,7 @@ public interface MovieMapper {
     List<Movie> selectAll();
 
     void insertBatch(List<Movie> movieList);
+
+    void deleteById(Integer id);
+
 }

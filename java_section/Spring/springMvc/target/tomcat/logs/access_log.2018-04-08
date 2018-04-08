@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [08/Apr/2018:17:24:17 +0800] "GET /customer/new HTTP/1.1" 200 252 http-bio-8080-exec-1 600
+0:0:0:0:0:0:0:1 - - [08/Apr/2018:17:24:26 +0800] "POST /customer/new HTTP/1.1" 302 - http-bio-8080-exec-2 29
+0:0:0:0:0:0:0:1 - - [08/Apr/2018:17:24:26 +0800] "GET /customer/new HTTP/1.1" 200 252 http-bio-8080-exec-3 2

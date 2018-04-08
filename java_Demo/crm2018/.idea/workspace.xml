@@ -50,11 +50,11 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="109" />
-    <option name="y" value="115" />
-    <option name="width" value="1467" />
-    <option name="height" value="904" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="174" />
+    <option name="y" value="205" />
+    <option name="width" value="1468" />
+    <option name="height" value="905" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -98,8 +98,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,7 +112,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,15 +188,15 @@
       <updated>1522466686568</updated>
       <workItem from="1522466689963" duration="1360000" />
       <workItem from="1522722031219" duration="596000" />
+      <workItem from="1522833228025" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1956000" />
+    <option name="totallyTimeSpent" value="1985000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="99" y="105" width="1328" height="818" extended-state="1" />
-    <editor active="true" />
+    <frame x="158" y="186" width="1329" height="819" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -212,7 +212,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2015873" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20539254" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

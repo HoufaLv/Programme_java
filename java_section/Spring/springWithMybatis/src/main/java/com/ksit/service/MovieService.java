@@ -32,4 +32,8 @@ public class MovieService {
     public void insertBatch(List<Movie> movieList){
         movieMapper.insertBatch(movieList);
     }
+
+    public void deleteById(Integer id){
+        movieMapper.deleteById(id);
+    }
 }

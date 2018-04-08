@@ -32,6 +32,9 @@
     <update id="updateMovie">
         update movie set  title=#{title},rate=#{rate},release_year=#{releaseYear},send_time=#{sendTime},director=#{director},description=#{description} where id = #{id};
     </update>
+    <delete id="deleteById">
+        delete from movie where id = #{id}
+    </delete>
 
     <select id="selectById" resultType="com.ksit.entity.Movie">
         select * from movie where id = #{id}

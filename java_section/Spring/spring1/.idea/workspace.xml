@@ -139,11 +139,11 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="450" />
-    <option name="y" value="68" />
-    <option name="width" value="1408" />
-    <option name="height" value="999" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="368" />
+    <option name="y" value="55" />
+    <option name="width" value="1277" />
+    <option name="height" value="906" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -192,8 +192,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -515,6 +515,7 @@
       <workItem from="1522417382623" duration="1479000" />
       <workItem from="1522451801688" duration="14517000" />
       <workItem from="1522722049662" duration="1379000" />
+      <workItem from="1522833230432" duration="38000" />
     </task>
     <servers />
   </component>
@@ -551,10 +552,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38008000" />
+    <option name="totallyTimeSpent" value="38046000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="408" y="62" width="1275" height="904" extended-state="1" />
+    <frame x="334" y="50" width="1156" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -571,7 +572,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" x="1101" y="260" width="321" height="593" id="Project" order="0" sideWeight="0.49867022" visible="true" weight="0.26512012" />
+      <window_info active="true" content_ui="combo" x="1101" y="260" width="321" height="593" id="Project" order="0" sideWeight="0.49867022" visible="true" weight="0.30055147" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -581,11 +582,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -63,4 +63,8 @@ public class MovieServiceTest extends BaseTest {
         
     }
 
+    @Test
+    public void testDeleteByid(){
+        movieService.deleteById(783);
+    }
 }
