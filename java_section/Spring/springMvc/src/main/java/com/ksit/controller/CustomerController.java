@@ -2,6 +2,7 @@ package com.ksit.controller;
 
 import com.ksit.entity.Customer;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -105,5 +106,18 @@ public class CustomerController {
     @ResponseBody
     public String showCustomerInConsole(){
         return "显示为string 不做视图间的跳转";
+    }
+
+    /**
+     * 如果GetMapping 或者 PostMapping 不写 value 则默认为前一级路径,没有参数
+     * @RequestParam 表示 重写url 的那个变量
+     * 可以使用model 类来向视图传递变量
+     * @return
+     */
+    @GetMapping
+    public String listCustomer(Model model, @RequestParam(defaultValue = "1") String p){
+        System.out.println("p = " + p);
+        model.addAttribute("p",p);
+        return "customer/list";
     }
 }
