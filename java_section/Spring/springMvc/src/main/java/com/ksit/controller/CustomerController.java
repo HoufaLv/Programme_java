@@ -1,6 +1,8 @@
 package com.ksit.controller;
 
 import com.ksit.entity.Customer;
+import com.ksit.exception.ControllerException;
+import com.ksit.exception.NotFoundException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -20,13 +22,13 @@ public class CustomerController {
         return "customer/add";
     }
 
-    /**
+  /*  *//**
      * 编写业务控制器,请求路径为:/customer/id=1001 其中限制id 为纯数字,通过正则表达式来进行限制
      * 这个GetMapping 注解中的id 必须和 下面的方法中的参数的名字保持一致,要在方法的参数前面加上@PathVriable 注解
      * 方法的返回值为 ModelAndView 表示通过 ModelAndView 对象来确定返回值和视图名称
      * @param id
      * @return
-     */
+     *//*
     @GetMapping(value = "/{id:\\d+}")
     public ModelAndView viewCustomer(@PathVariable Integer id){
         System.out.println("id = " + id);
@@ -39,7 +41,7 @@ public class CustomerController {
 
         //跳转到customer/view 这个路径下的页面
         return modelAndView;
-    }
+    }*/
 
     /**
      * url 中有多个参数,根据性别和id 来查看customer
@@ -59,6 +61,24 @@ public class CustomerController {
         //通过ModelAndView 对象来跳转视图和 传递变量
         modelAndView.addObject("gender",gender);
 
+        return modelAndView;
+    }
+
+    @GetMapping("/{id:\\d+}")
+    public ModelAndView viewCustomerById(@PathVariable Integer id){
+        System.out.println("id = " + id);
+        if (id==1001){
+            System.out.println("invoke step");
+            throw new NotFoundException();
+        }
+
+        //通过ModelAndView 对象来传值和跳转页面
+        ModelAndView modelAndView = new ModelAndView("customer/view");
+
+        //通过这个方法来像页面中传递数据
+        modelAndView.addObject("id",id);
+
+        //跳转到customer/view 这个路径下的页面
         return modelAndView;
     }
 
@@ -108,18 +128,18 @@ public class CustomerController {
         return "显示为string 不做视图间的跳转";
     }
 
-    /**
+/*    *//**
      * 如果GetMapping 或者 PostMapping 不写 value 则默认为前一级路径,没有参数
      * @RequestParam 表示 重写url 的那个变量
      * 可以使用model 类来向视图传递变量
      * @return
-     */
+     *//*
     @GetMapping
     public String listCustomer(Model model, @RequestParam(defaultValue = "1") String p){
         System.out.println("p = " + p);
         model.addAttribute("p",p);
         return "customer/list";
-    }
+    }*/
 
     @GetMapping(value = "/show.json")
     public @ResponseBody Customer showJsonCustomer(){

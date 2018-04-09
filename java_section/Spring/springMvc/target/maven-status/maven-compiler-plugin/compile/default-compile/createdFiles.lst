@@ -1,8 +1,10 @@
 com\ksit\controller\FileUploadController.class
 com\ksit\controller\RequestHeaderController.class
 com\ksit\filter\EncodingFilter.class
+com\ksit\exception\ControllerException.class
 com\ksit\controller\HelloController.class
 com\ksit\entity\Customer.class
+com\ksit\exception\NotFoundException.class
 com\ksit\controller\staticResourceController.class
 com\ksit\controller\CustomerController.class
 com\ksit\filter\AbstractFilter.class
