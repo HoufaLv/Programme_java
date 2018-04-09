@@ -120,4 +120,11 @@ public class CustomerController {
         model.addAttribute("p",p);
         return "customer/list";
     }
+
+    @GetMapping(value = "/show.json")
+    public @ResponseBody Customer showJsonCustomer(){
+        Customer customer = new Customer("张三", 1);
+        return customer;
+    }
+
 }
