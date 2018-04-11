@@ -39,6 +39,33 @@
         select *
         from product_type
     </select>
+
+    <select id="selectProductByPageNoWithParamMap" resultMap="productWithType">
+        SELECT
+            product.*,
+            type_name,
+            parent_id
+        FROM
+            product
+            LEFT JOIN product_type ON product.type_id = product_type.id
+            <where>
+                <if test="productName!=null and productName!=''">
+                    product.product_name like concat('%',#{productName},'%')
+                </if>
+                <if test="place!=null and place!=''">
+                    and product.place = #{place}
+                </if>
+                <if test="minPrice!=null and minPrice!=''">
+                    and product.price &gt;#{minPrice}
+                </if>
+                <if test="maxPrice!=null and maxPrice!=''">
+                    and product.price &lt;#{maxPrice}
+                </if>
+            </where>
+        ORDER BY
+            product.id DESC
+    </select>
+
     <resultMap id="productWithType" type="Product">
         <id column="id" property="id"/>
         <result column="product_name" property="productName"/>

@@ -5,6 +5,7 @@ import com.ksit.entity.Product;
 import com.ksit.entity.ProductType;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Lvhoufa
@@ -48,4 +49,12 @@ public interface ProductService {
      * @param product
      */
     void updateProduct(Product product);
+
+    /**
+     * 根据页号和 参数动态查询
+     * @param pageNo
+     * @param paramsMap
+     * @return
+     */
+    PageInfo<Product> selectProductByPageNoWithParamMap(Integer pageNo, Map<String, Object> paramsMap);
 }

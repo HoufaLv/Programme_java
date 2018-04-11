@@ -5,6 +5,7 @@ import com.ksit.entity.Product;
 import com.ksit.entity.ProductType;
 
 import java.util.List;
+import java.util.Map;
 
 public interface ProductMapper {
 
@@ -45,4 +46,6 @@ public interface ProductMapper {
      * @param product
      */
     void updateProduct(Product product);
+
+    List<Product> selectProductByPageNoWithParamMap(Map<String, Object> paramsMap);
 }

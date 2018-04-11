@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class ProductServiceImpl implements ProductService {
@@ -86,6 +87,21 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void updateProduct(Product product) {
         productMapper.updateProduct(product);
+    }
+
+    /**
+     * 根据页号和 参数动态查询
+     *
+     * @param pageNo
+     * @param paramsMap
+     * @return
+     */
+    @Override
+    public PageInfo<Product> selectProductByPageNoWithParamMap(Integer pageNo, Map<String, Object> paramsMap) {
+        //设置每页10 条数据
+        PageHelper.startPage(pageNo,10);
+        List<Product> productList = productMapper.selectProductByPageNoWithParamMap(paramsMap);
+        return new PageInfo<>(productList);
     }
 
 }
