@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:08:48:16 +0800] "GET /product HTTP/1.1" 200 10121 http-bio-8080-exec-1 1341
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:08:48:22 +0800] "GET /product/30905/edit HTTP/1.1" 200 2946 http-bio-8080-exec-5 128
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:08:48:50 +0800] "POST /product/30905/edit HTTP/1.1" 302 - http-bio-8080-exec-6 35
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:08:48:50 +0800] "GET /product HTTP/1.1" 200 10123 http-bio-8080-exec-7 36
+127.0.0.1 - - [11/Apr/2018:09:00:32 +0800] "GET /product/3000/edit HTTP/1.1" 200 2945 http-bio-8080-exec-9 19
+127.0.0.1 - - [11/Apr/2018:09:00:48 +0800] "GET /product/3177/edit HTTP/1.1" 200 2945 http-bio-8080-exec-10 13
+127.0.0.1 - - [11/Apr/2018:09:00:55 +0800] "GET /product/6155/edit HTTP/1.1" 200 2946 http-bio-8080-exec-10 12

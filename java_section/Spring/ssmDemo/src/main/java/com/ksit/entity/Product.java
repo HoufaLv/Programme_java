@@ -1,5 +1,7 @@
 package com.ksit.entity;
 
+import com.ksit.controller.ProductController;
+
 import java.math.BigDecimal;
 
 /**
@@ -15,6 +17,8 @@ public class Product {
     private Integer commentNum;
     private Integer typeId;
 
+    private ProductType productType;
+
     @Override
     public String toString() {
         return "Product{" +
@@ -25,6 +29,7 @@ public class Product {
                 ", place='" + place + '\'' +
                 ", commentNum=" + commentNum +
                 ", typeId=" + typeId +
+                ", productType=" + productType +
                 '}';
     }
 
@@ -103,5 +108,13 @@ public class Product {
 
     public void setTypeId(Integer typeId) {
         this.typeId = typeId;
+    }
+
+    public ProductType getProductType() {
+        return productType;
+    }
+
+    public void setProductType(ProductType productType) {
+        this.productType = productType;
     }
 }

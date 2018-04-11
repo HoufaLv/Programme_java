@@ -3,4 +3,5 @@ com\ksit\service\impl\ProductServiceImpl.class
 com\ksit\exception\NotFoundException.class
 com\ksit\entity\Product.class
 com\ksit\service\ProductService.class
+com\ksit\entity\ProductType.class
 com\ksit\mapper\ProductMapper.class

@@ -2,8 +2,55 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ksit.mapper.ProductMapper">
+    <insert id="insertProduct" useGeneratedKeys="true" keyProperty="id">
+        insert into product (product_name, price, market_price, place, comment_num, type_id) values
+            (#{productName}, #{price}, #{marketPrice}, #{place}, #{commentNum}, #{typeId})
+    </insert>
+    <update id="updateProduct">
+        update
+            product
+        set
+            product_name = #{productName},price=#{price},market_price=#{marketPrice},place=#{place},type_id=#{typeId}
+        where
+            id = #{id}
+    </update>
+    <delete id="deleteProduct">
+        delete  from  product where id = #{id}
+    </delete>
 
     <select id="selectById" resultType="com.ksit.entity.Product">
-        select * from product where id = #{id}
+        select *
+        from product
+        where id = #{id}
     </select>
+
+    <select id="selectAllWithType" resultMap="productWithType">
+        SELECT
+            product.*,
+            type_name,
+            parent_id
+        FROM
+            product
+            LEFT JOIN product_type ON product.type_id = product_type.id
+        ORDER BY
+            product.id DESC
+    </select>
+    <select id="selectAllType" resultType="com.ksit.entity.ProductType">
+        select *
+        from product_type
+    </select>
+    <resultMap id="productWithType" type="Product">
+        <id column="id" property="id"/>
+        <result column="product_name" property="productName"/>
+        <result column="price" property="price"/>
+        <result column="market_price" property="marketPrice"/>
+        <result column="place" property="place"/>
+        <result column="comment_num" property="commentNum"/>
+        <result column="type_id" property="typeId"/>
+        <association property="productType" javaType="ProductType">
+            <result column="type_id" property="id"/>
+            <result column="type_name" property="typeName"/>
+            <result column="parent_id" property="parentId"/>
+        </association>
+    </resultMap>
 </mapper>
