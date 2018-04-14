@@ -4,6 +4,7 @@ import com.ksit.tms.entity.AccountLoginLog;
 import com.ksit.tms.entity.AccountLoginLogExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Service;
 
 public interface AccountLoginLogMapper {
     long countByExample(AccountLoginLogExample example);

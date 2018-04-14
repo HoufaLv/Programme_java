@@ -1,5 +1,11 @@
 G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\entity\Account.java
+G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\entity\Roles.java
 G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\exception\ServiceException.java
 G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\entity\AccountLoginLogExample.java
+G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\entity\RolesHasTPermissionKey.java
 G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\entity\AccountLoginLog.java
+G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\entity\Permission.java
 G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\entity\AccountExample.java
+G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\entity\PermissionExample.java
+G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\entity\RolesExample.java
+G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\entity\RolesHasTPermissionExample.java

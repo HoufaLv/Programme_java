@@ -2,314 +2,211 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f0a6625-9ccd-4611-8dc1-aa6682b08bbe" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/tms_finance_web_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/tms_finance_web_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/tms_manager_web_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/tms_manager_web_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Lvhoufa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_40.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_14_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_14_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_14_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_14_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_14_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_14_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_14_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_14_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_14_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_14_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/parent.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/AccountExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/AccountLoginLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/AccountLoginLogExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/classes/com/ksit/tms/entity/Account.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/classes/com/ksit/tms/entity/AccountExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/classes/com/ksit/tms/entity/AccountExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/classes/com/ksit/tms/entity/AccountExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/classes/com/ksit/tms/entity/AccountExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/classes/com/ksit/tms/entity/AccountLoginLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/classes/com/ksit/tms/entity/AccountLoginLogExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/classes/com/ksit/tms/entity/AccountLoginLogExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/classes/com/ksit/tms/entity/AccountLoginLogExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/classes/com/ksit/tms/entity/AccountLoginLogExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/classes/com/ksit/tms/exception/ServiceException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/target/tms-commons-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-commons/tms-commons.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-finance-web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-finance-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-finance-web/src/main/webapp/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-finance-web/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-finance-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-finance-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-finance-web/target/tms-finance-web-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-finance-web/target/tms-finance-web-1.0-SNAPSHOT/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-finance-web/tms-finance-web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/mvc-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/AdminLTE.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/AdminLTE.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/adminlte.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/adminlte.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/alt/AdminLTE-bootstrap-social.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/alt/AdminLTE-bootstrap-social.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/alt/AdminLTE-fullcalendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/alt/AdminLTE-fullcalendar.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/alt/AdminLTE-select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/alt/AdminLTE-select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/alt/AdminLTE-without-plugins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/alt/AdminLTE-without-plugins.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/_all-skins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/_all-skins.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-black-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-black-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-black.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-black.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-blue-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-blue-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-blue.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-green-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-green-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-green.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-purple-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-purple-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-purple.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-red-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-red-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-red.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-red.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-yellow-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-yellow-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-yellow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/css/skins/skin-yellow.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/avatar04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/avatar2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/avatar3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/avatar5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/boxed-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/boxed-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/credit/american-express.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/credit/cirrus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/credit/mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/credit/mestro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/credit/paypal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/credit/paypal2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/credit/visa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/default-50x50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/photo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/photo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/photo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/photo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/user1-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/user2-160x160.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/user3-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/user4-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/user5-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/user6-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/user7-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/img/user8-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/js/adminlte.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/js/adminlte.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/js/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/js/pages/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/dist/js/pages/dashboard2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/classes/com/ksit/tms/controller/TestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/classes/com/ksit/tms/controller/TestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-dbcp2-2.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-0.9.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.40.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-5.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.14.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.14.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.3.14.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.3.14.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.14.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.14.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-test-4.3.14.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.14.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.14.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.14.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/tms-commons-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/tms-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/tms-service-impl-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/mvc-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/AdminLTE.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/AdminLTE.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/adminlte.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/adminlte.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-bootstrap-social.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-bootstrap-social.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-fullcalendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-fullcalendar.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-without-plugins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-without-plugins.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/_all-skins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/_all-skins.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-black-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-black-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-black.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-black.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-blue-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-blue-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-blue.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-green-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-green-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-green.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-purple-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-purple-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-purple.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-red-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-red-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-red.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-red.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-yellow-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-yellow-light.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-yellow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-yellow.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/avatar04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/avatar2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/avatar3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/avatar5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/boxed-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/boxed-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/american-express.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/cirrus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/mestro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/paypal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/paypal2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/visa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/default-50x50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/photo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/photo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/photo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/photo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user1-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user2-160x160.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user3-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user4-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user5-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user6-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user7-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user8-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/js/adminlte.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/js/adminlte.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/js/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/js/pages/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/js/pages/dashboard2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tomcat/conf/logging.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tomcat/conf/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/target/tomcat/logs/access_log.2018-04-12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-manager-web/tms-manager-web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountLoginLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/AccountLoginLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/AccountMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/classes/com/ksit/tms/mapper/AccountLoginLogMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/classes/com/ksit/tms/mapper/AccountMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/classes/com/ksit/tms/service/impl/AccountServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/classes/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/classes/mapper/AccountLoginLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/classes/mapper/AccountMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/classes/spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/target/tms-service-impl-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service/src/main/java/com/ksit/tms/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service/target/classes/com/ksit/tms/service/AccountService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service/target/tms-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tms-service/tms-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/PermissionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/RolesExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/RolesHasTPermissionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/RolesHasTPermissionKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/account/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/blank.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/css.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/js.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/nav.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/newPermission.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/CHANGELOG.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/css/jquery.treegrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/bootstrap-2.3.2/css/bootstrap-responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/bootstrap-2.3.2/css/bootstrap-responsive.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/bootstrap-2.3.2/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/bootstrap-2.3.2/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/bootstrap-2.3.2/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/bootstrap-2.3.2/img/glyphicons-halflings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/bootstrap-2.3.2/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/bootstrap-2.3.2/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/example-basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/example-bootstrap-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/example-bootstrap-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/example-bootstrap-resize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/example-column.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/example-events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/example-huge.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/examples/example-save-state.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/img/collapse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/img/expand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/img/file.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/img/folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/js/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/js/jquery.treegrid.bootstrap2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/js/jquery.treegrid.bootstrap3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/js/jquery.treegrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/js/jquery.treegrid.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/params.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/tests/qunit-1.12.0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/tests/qunit-1.12.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/tests/tests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/treegrid.jquery.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/RolesHasTPermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/RolesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/service/impl/RolePermissionServicveImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/PermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/RolesHasTPermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/RolesMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tms-service/src/main/java/com/ksit/tms/service/RolePermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/tms_manager_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/tms_manager_web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tms-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/tms-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/tms-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-commons/target/tms-commons-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tms-commons/target/tms-commons-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-commons/tms-commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tms-commons/tms-commons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/classes/com/ksit/tms/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/tms-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/tms-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/classes/com/ksit/tms/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-dbcp2-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-0.9.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.40.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-5.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-test-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/tms-commons-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/tms-service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/lib/tms-service-impl-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/mvc-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/views/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/AdminLTE.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/AdminLTE.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/adminlte.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/adminlte.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-bootstrap-social.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-bootstrap-social.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-fullcalendar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-without-plugins.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/alt/AdminLTE-without-plugins.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/_all-skins.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/_all-skins.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-black-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-black-light.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-black.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-black.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-blue-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-blue-light.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-blue.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-green-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-green-light.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-green.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-purple-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-purple-light.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-purple.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-red-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-red-light.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-red.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-yellow-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-yellow-light.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/css/skins/skin-yellow.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/avatar04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/avatar2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/avatar3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/avatar5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/boxed-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/boxed-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/american-express.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/cirrus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/mastercard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/mestro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/paypal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/paypal2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/credit/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/default-50x50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/photo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/photo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/photo3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/photo4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user1-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user2-160x160.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user3-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user4-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user5-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user6-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user7-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/img/user8-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/js/adminlte.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/js/adminlte.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/js/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/js/pages/dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tms-manager-web-1.0-SNAPSHOT/static/dist/js/pages/dashboard2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/target/tomcat/logs/access_log.2018-04-12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/tms-manager-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tms-manager-web/tms-manager-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountLoginLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountLoginLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/com/ksit/tms/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/target/classes/com/ksit/tms/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/target/classes/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/target/tms-service-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/target/tms-service-impl-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service/target/tms-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service/target/tms-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tms-service/tms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tms-service/tms-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java_section/Mybatis/mybatisG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java_section/Mybatis/mybatisG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java_section/Spring/ssmDemo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../java_section/Spring/ssmDemo/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/tms-commons/target/" />
     <ignored path="$PROJECT_DIR$/tms-finance-web/target/" />
@@ -340,11 +237,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TestController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/TestController.java">
+      <file leaf-file-name="PermissionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/PermissionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="120">
+              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RolePermissionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/ksit/tms/service/RolePermissionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Permission.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/Permission.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PermissionMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/PermissionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PermissionMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/PermissionMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="694">
+              <caret line="257" column="11" selection-start-line="257" selection-start-column="11" selection-end-line="257" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tms-commons/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PermissionExample.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/PermissionExample.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-174">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newPermission.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/newPermission.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -356,8 +327,8 @@
       <list>
         <option value="webxml" />
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -375,28 +346,50 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/home.jsp" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/spring.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/tms-commons/pom.xml" />
         <option value="$PROJECT_DIR$/parent/pom.xml" />
         <option value="$PROJECT_DIR$/tms-finance-web/pom.xml" />
         <option value="$PROJECT_DIR$/tms-manager-web/pom.xml" />
         <option value="$PROJECT_DIR$/tms-service/pom.xml" />
-        <option value="$PROJECT_DIR$/tms-service-impl/pom.xml" />
         <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tsm/entity/TAccountLoginLogin.java" />
         <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tsm/exception/ServiceException.java" />
         <option value="$PROJECT_DIR$/tms-service/src/main/java/com/ksit/tsm/service/AccountService.java" />
         <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tsm/entity/AccountLoginLog.java" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tsm/mapper/AccountLoginLogMapper.java" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountLoginLogMapper.java" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/AccountLoginLogMapper.xml" />
         <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/Account.java" />
         <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/AccountLoginLog.java" />
+        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/ksit/tms/service/AccountService.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountLoginLogMapper.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountMapper.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/account/login.jsp" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/spring.xml" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/tms-service-impl/pom.xml" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/service/impl/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/nav.jsp" />
+        <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/Roles.java" />
+        <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/RolesHasTPermissionKey.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/RolesMapper.xml" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/css.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/js.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/header.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/footer.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/home.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/blank.jsp" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/service/impl/RolePermissionServicveImpl.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/newPermission.jsp" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/PermissionMapper.xml" />
+        <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/Permission.java" />
+        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/ksit/tms/service/RolePermissionService.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/PermissionController.java" />
+        <option value="$PROJECT_DIR$/tms-commons/pom.xml" />
       </list>
     </option>
   </component>
@@ -438,6 +431,15 @@
           <item name="tms-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="tms-service-impl" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="tms-service-impl" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -446,10 +448,10 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="137" />
-    <option name="y" value="92" />
-    <option name="width" value="1718" />
-    <option name="height" value="902" />
+    <option name="x" value="58" />
+    <option name="y" value="61" />
+    <option name="width" value="1723" />
+    <option name="height" value="967" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -462,6 +464,10 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-commons" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="tms" type="b2602c69:ProjectViewProjectNode" />
               <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
@@ -492,6 +498,144 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="manage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="manage" type="462c0819:PsiDirectoryNode" />
+              <item name="permission" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -515,11 +659,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\GitHub\Programme\java\java_Demo\tms\tms-service-impl" />
-      <recent name="G:\GitHub\Programme\java\java_Demo\tms\tms-service" />
-      <recent name="G:\GitHub\Programme\java\java_Demo\tms\tms-manager-web" />
-      <recent name="G:\GitHub\Programme\java\java_Demo\tms\tms-finance-web" />
-      <recent name="G:\GitHub\Programme\java\java_Demo\tms\tms-commons" />
+      <recent name="G:\GitHub\Programme\java\java_Demo\tms\tms-service-impl\src\main\resources\mapper" />
+      <recent name="G:\GitHub\Programme\java\java_Demo\tms\tms-service-impl\src\main\java\com\ksit\tms\mapper" />
+      <recent name="G:\GitHub\Programme\java\java_Demo\tms\tms-commons\src\main\java\com\ksit\tms\entity" />
+      <recent name="G:\GitHub\Programme\java\java_Demo\tms\tms-manager-web\src\main\webapp\static\bower_components" />
+      <recent name="G:\GitHub\Programme\java\java_Demo\tms\tms-manager-web\src\main\webapp\WEB-INF\views\manage\permission" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -534,7 +678,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Maven.tms-manager-web tomcat7">
+    <configuration name="AccountServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ksit.tms.service.impl.AccountServiceImpl" />
+      <module name="tms-service-impl" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ksit.tms.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -601,6 +756,15 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Maven.tms-manager-web tomcat7" />
+      <item itemvalue="Application.AccountServiceImpl" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AccountServiceImpl" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Lvhoufa\AppData\Roaming\Subversion</configuration>
@@ -616,12 +780,12 @@
       <workItem from="1523521335864" duration="7717000" />
       <workItem from="1523537418160" duration="1523000" />
       <workItem from="1523538997201" duration="3367000" />
-      <workItem from="1523543563212" duration="2596000" />
+      <workItem from="1523543563212" duration="24182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15543000" />
+    <option name="totallyTimeSpent" value="37129000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -637,29 +801,30 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="8" weight="0.32963374" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.12875536" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.18382818" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.1809101" />
-      <window_info anchor="bottom" id="Spring" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.26859045" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22156653" />
-      <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.32941177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.2974473" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.32963374" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.31807512" />
+      <window_info anchor="bottom" id="Spring" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.26859045" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2265625" />
+      <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -674,290 +839,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="10" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/ksit/tms/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/service/impl/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tsm/entity/AccountLoginLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountLoginLogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/AccountLoginLogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/mvc-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="53" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2460">
-          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-finance-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/mvc-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="53" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-finance-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tsm/entity/TAccountLoginLogin.java" />
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tsm/mapper/TAccountLoginLoginMapper.java" />
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/TAccountLoginLoginMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tsm/entity/AccountLoginLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/AccountExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/AccountMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="160" column="28" selection-start-line="160" selection-start-column="14" selection-end-line="160" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/exception/ServiceException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/AccountLoginLogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3440">
-          <caret line="172" column="11" lean-forward="true" selection-start-line="172" selection-start-column="11" selection-end-line="172" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountLoginLogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/ksit/tms/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/AccountLoginLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
           <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/service/impl/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="60" column="28" lean-forward="true" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -979,10 +870,323 @@
     <entry file="file://$PROJECT_DIR$/parent/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/TestController.java">
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/font-awesome/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="-1620" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/ksit/tms/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="e#1232#1245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/mvc-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="53" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-622">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/account/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/Roles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/RolesExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/RolesHasTPermissionExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/RolesHasTPermissionKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountLoginLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/AccountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/RolesHasTPermissionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/RolesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="938">
+          <caret line="209" column="11" selection-start-line="209" selection-start-column="11" selection-end-line="209" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/RolesHasTPermissionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/RolesMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/css.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/nav.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/blank.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/blank.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/bower_components/maxazan-jquery-treegrid-447d662/js/jquery.cookie.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/js.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/service/impl/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="70" column="28" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/service/impl/RolePermissionServicveImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/newPermission.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/PermissionExample.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/ksit/tms/mapper/PermissionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/PermissionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="257" column="11" selection-start-line="257" selection-start-column="11" selection-end-line="257" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/ksit/tms/entity/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/ksit/tms/service/RolePermissionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/ksit/tms/controller/PermissionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-commons/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:14:53 +0800] "GET //manage/permission HTTP/1.1" 200 21286 http-bio-8080-exec-1 1498
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:14:53 +0800] "GET /dist/img/user2-160x160.jpg HTTP/1.1" 404 1003 http-bio-8080-exec-7 5
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:14:57 +0800] "GET /manage/permission/new HTTP/1.1" 200 21793 http-bio-8080-exec-8 491
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:14:57 +0800] "GET /dist/img/user2-160x160.jpg HTTP/1.1" 404 1003 http-bio-8080-exec-9 2
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:15:07 +0800] "GET /manage/permission HTTP/1.1" 200 21286 http-bio-8080-exec-10 10
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:15:07 +0800] "GET /dist/img/user2-160x160.jpg HTTP/1.1" 404 1003 http-bio-8080-exec-10 2
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:15:07 +0800] "GET /manage/permission/new HTTP/1.1" 200 21793 http-bio-8080-exec-10 11
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:15:07 +0800] "GET /dist/img/user2-160x160.jpg HTTP/1.1" 404 1003 http-bio-8080-exec-10 2
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:19:56 +0800] "GET /manage/permission/new HTTP/1.1" 200 21866 http-bio-8080-exec-6 338
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:19:56 +0800] "GET /dist/img/user2-160x160.jpg HTTP/1.1" 404 1003 http-bio-8080-exec-6 2
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:20:19 +0800] "GET /manage/permission/new HTTP/1.1" 200 21887 http-bio-8080-exec-6 292
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:15:20:19 +0800] "GET /dist/img/user2-160x160.jpg HTTP/1.1" 404 1003 http-bio-8080-exec-3 1

@@ -4,6 +4,7 @@ import com.ksit.tms.entity.Account;
 import com.ksit.tms.entity.AccountExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Service;
 
 public interface AccountMapper {
     long countByExample(AccountExample example);

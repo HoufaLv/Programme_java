@@ -7,9 +7,12 @@ import com.ksit.tms.exception.ServiceException;
 import com.ksit.tms.mapper.AccountLoginLogMapper;
 import com.ksit.tms.mapper.AccountMapper;
 import com.ksit.tms.service.AccountService;
+
+import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
@@ -19,6 +22,7 @@ import java.util.List;
  *
  * @author Lvhoufa
  */
+@Service
 public class AccountServiceImpl implements AccountService {
 
     /**
@@ -60,10 +64,10 @@ public class AccountServiceImpl implements AccountService {
         if (accounts != null && !(accounts.size() == 0)) {
             //取出查出来的 account
             account = accounts.get(0);
+            System.out.println(DigestUtils.md5Hex(password));
 
             //判断密码正否正确
-            if (account.getAccountPassword().equals(password)) {
-
+            if (account.getAccountPassword().equals(DigestUtils.md5Hex(password))) {
                 //如果用户的状态不正常
                 if (!(Account.ACCOUNT_NORMAL.equals(account.getAccountState()))) {
                     throw new ServiceException("用户状态" + account.getAccountState());
@@ -72,7 +76,7 @@ public class AccountServiceImpl implements AccountService {
                     //验证通过,添加日志
                     AccountLoginLog accountLoginLog = new AccountLoginLog(loginIp, new Date(), account.getId());
                     logger.debug("{} 登陆了系统.", accountLoginLog);
-
+                    accountLoginLogMapper.insertSelective(accountLoginLog);
                     return account;
                 }
             } else {

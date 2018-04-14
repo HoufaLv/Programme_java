@@ -1,1 +1,2 @@
-com\ksit\tms\controller\TestController.class
+com\ksit\tms\controller\HomeController.class
+com\ksit\tms\controller\PermissionController.class

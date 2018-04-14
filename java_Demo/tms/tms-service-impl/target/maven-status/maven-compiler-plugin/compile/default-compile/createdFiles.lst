@@ -1,3 +1,7 @@
 com\ksit\tms\service\impl\AccountServiceImpl.class
-com\ksit\tms\mapper\AccountLoginLogMapper.class
 com\ksit\tms\mapper\AccountMapper.class
+com\ksit\tms\mapper\PermissionMapper.class
+com\ksit\tms\service\impl\RolePermissionServicveImpl.class
+com\ksit\tms\mapper\RolesMapper.class
+com\ksit\tms\mapper\RolesHasTPermissionMapper.class
+com\ksit\tms\mapper\AccountLoginLogMapper.class
