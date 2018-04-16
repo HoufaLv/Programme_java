@@ -51,6 +51,10 @@
                             </select>
                         </div>
                         <div class="form-group">
+                            <h4>资源URL</h4>
+                            <input type="text" name="permissionUrl" class="form-control">
+                        </div>
+                        <div class="form-group">
                             <h4>父权限</h4>
                             <select name="parentId" class="form-control">
                                 <option value="0">顶级菜单</option>

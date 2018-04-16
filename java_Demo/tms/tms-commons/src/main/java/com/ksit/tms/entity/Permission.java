@@ -47,6 +47,20 @@ public class Permission implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @Override
+    public String toString() {
+        return "Permission{" +
+                "id=" + id +
+                ", permissionName='" + permissionName + '\'' +
+                ", permissionCode='" + permissionCode + '\'' +
+                ", permissionType='" + permissionType + '\'' +
+                ", parentId=" + parentId +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", permissionUrl='" + permissionUrl + '\'' +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }
