@@ -144,17 +144,19 @@ public class RolePermissionServiceImpl implements RolePermissionService {
         rolesMapper.insertSelective(roles);
 
         //保存角色和权限的对应关系,每有一条关联关系,就在数据库中保存一下
-        for (Integer i :
-                permissionId) {
+        if (permissionId!=null && permissionId.length!=0){
+            for (Integer i :
+                    permissionId) {
 
-            //封装每一条数据
-            RolesPermissionKey rolesPermissionKey = new RolesPermissionKey();
-            rolesPermissionKey.settRolesId(roles.getId());
-            rolesPermissionKey.settPermissionId(i);
+                //封装每一条数据
+                RolesPermissionKey rolesPermissionKey = new RolesPermissionKey();
+                rolesPermissionKey.settRolesId(roles.getId());
+                rolesPermissionKey.settPermissionId(i);
 
-            System.out.println(rolesPermissionKey);
-            //保存关联关系
-            rolesPermissionMapper.insert(rolesPermissionKey);
+                System.out.println(rolesPermissionKey);
+                //保存关联关系
+                rolesPermissionMapper.insert(rolesPermissionKey);
+            }
         }
 
         //记录日志
@@ -204,5 +206,38 @@ public class RolePermissionServiceImpl implements RolePermissionService {
     @Override
     public List<Roles> selectAllRolesWithPermission() {
         return rolesMapper.selectAllWithPermission();
+    }
+
+    /**
+     * 根据id 来删除角色
+     *
+     * @param id
+     */
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class)
+    public void deleteRoleById(Integer id) {
+        //如果关联关系表中有角色的信息,应该先从关联关系表中删除角色的信息
+
+        RolesPermissionExample rolesPermissionExample = new RolesPermissionExample();
+        rolesPermissionExample.createCriteria().andTRolesIdEqualTo(id);
+        List<RolesPermissionKey> rolesPermissionKeys = rolesPermissionMapper.selectByExample(rolesPermissionExample);
+        if (rolesPermissionKeys!=null && !rolesPermissionKeys.isEmpty()){
+            throw new ServiceException("角色绑定有权限,无法删除");
+        }
+
+
+        rolesMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 根据id 查询出完整的角色信息
+     *
+     * @param id 角色的id
+     * @return 角色对象
+     */
+    @Override
+    public Roles selectRoleWithPermissionById(Integer id) {
+        Roles roles = rolesMapper.selectRoleWithPermissionById(id);
+        return roles;
     }
 }

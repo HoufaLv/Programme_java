@@ -51,20 +51,19 @@
                             <c:forEach items="${rolesList}" var="role">
                                 <tr class="bg-purple">
                                     <%-- 显示角色名字 --%>
-
                                     <td>
                                         <strong>角色名称</strong> ${role.rolesName}
-                                        <a rel="${role.id}" href="#" class="btn-sm btn-success pull-right">编辑</a>
-                                        <a rel="${role.id}" href="#" class="btn-sm btn-danger pull-right">删除</a>
+                                        <a href="/manage/role/${role.id}/update" class="btn-sm btn-success pull-right">编辑</a>
+                                        <a id="delRoles" rel="${role.id}" href="#" class="btn-sm btn-danger pull-right delRoles">删除</a>
                                     </td>
                                 </tr>
 
                                 <%--再来一个循环,显示对应的权限--%>
 
                                 <tr>
-                                    <td>
+                                    <td><strong>拥有权限: </strong>
                                         <c:forEach items="${role.permissionList}" var="permission">
-                                            <strong>拥有权限: </strong> <i class="fa fa-key"></i> ${permission.permissionName}
+                                            <i class="fa fa-key"></i>${permission.permissionName}
                                         </c:forEach>
                                     </td>
                                 </tr>
@@ -95,25 +94,26 @@
     $(function () {
         $('.tree').treegrid();
 
-        /*/!* 完成删除功能 *!/
-        $(".delPermission").click(function () {
-            /!* 获取要删除的id *!/
-            var id = $(this).attr("rel");
-            layer.confirm("将会删除权限",function (index) {
+        /*删除角色*/
+        $(".delRoles").click(function () {
+            /*使用ajax 完成删除动作*/
+            var id = $("#delRoles").attr("rel");
+
+            layer.confirm("将会删除角色",function (index) {
                 layer.close(index);
-                $.get("/manage/permission/"+id+"/del").done(function (result) {
-                    if(result.status == 'success') {
-                        /!* 刷新页面 *!/
+
+                $.get("/manage/role/" + id +"/del").done(function (result) {
+                    if (result.status == 'success'){
                         history.go(0);
-                    } else {
-                        /!* 显示状态信息 *!/
+                    } else{
                         layer.msg(result.message);
+                        history.go(0);
                     }
                 }).error(function () {
-                    layer.msg("服务器忙");
+                    layer.msg("服务器忙,请稍后再试");
                 });
             })
-        });*/
+        });
     });
 </script>
 

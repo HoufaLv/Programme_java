@@ -29,4 +29,11 @@ public interface RolesMapper {
     int updateByPrimaryKey(Roles record);
 
     List<Roles> selectAllWithPermission();
+
+    /**
+     * 根据id 查询角色的完整信息
+     * @param id        角色id
+     * @return          角色
+     */
+    Roles selectRoleWithPermissionById(Integer id);
 }

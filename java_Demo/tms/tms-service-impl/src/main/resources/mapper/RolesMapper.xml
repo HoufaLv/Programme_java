@@ -169,6 +169,23 @@
         ORDER BY
             t_roles.id DESC
     </select>
+    <select id="selectRoleWithPermissionById" resultMap="RolesWithType">
+        SELECT
+            t_roles.*, t_permission.id AS permissionId,
+            t_permission.create_time AS permissionCreateTime,
+            t_permission.permission_code AS permissionCode,
+            t_permission.permission_name AS permissionName,
+            t_permission.permission_type AS permissionType,
+            t_permission.permission_url AS permissionUrl,
+            t_permission.update_time AS permissionUpdateTime,
+            t_permission.parent_id AS parentId
+        FROM
+            t_roles
+        LEFT JOIN t_roles_permission ON t_roles.id = t_roles_permission.t_roles_id
+        LEFT JOIN t_permission ON t_permission.id = t_roles_permission.t_permission_id
+        where t_roles.id = #{id}
+    </select>
+
     <resultMap id="RolesWithType" type="com.ksit.tms.entity.Roles" extends="BaseResultMap">
         <collection property="permissionList" ofType="Permission">
             <id column="permissionId" property="id"/>

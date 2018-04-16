@@ -67,4 +67,17 @@ public interface RolePermissionService {
      * @return
      */
     List<Roles> selectAllRolesWithPermission();
+
+    /**
+     * 根据id 来删除角色
+     * @param id
+     */
+    void deleteRoleById(Integer id);
+
+    /**
+     * 根据id 查询出完整的角色信息
+     * @param id        角色的id
+     * @return          角色对象
+     */
+    Roles selectRoleWithPermissionById(Integer id);
 }
