@@ -2,15 +2,17 @@ package com.ksit.tms.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
- * @author 
+ * @author
  */
 public class Account implements Serializable {
 
     public static final String ACCOUNT_NORMAL = "正常";
     public static final String ACCOUNT_LOCKED = "锁定";
     public static final String ACCOUNT_FORBIDDEN = "禁用";
+    public static final String PAASWORD = "000000";
 
 
     private Integer id;
@@ -36,7 +38,31 @@ public class Account implements Serializable {
 
     private String accountState;
 
+    private List<Roles> rolesList;
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", accountName='" + accountName + '\'' +
+                ", accountMobile='" + accountMobile + '\'' +
+                ", accountPassword='" + accountPassword + '\'' +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", accountState='" + accountState + '\'' +
+                ", rolesList=" + rolesList +
+                '}';
+    }
+
     private static final long serialVersionUID = 1L;
+
+    public List<Roles> getRolesList() {
+        return rolesList;
+    }
+
+    public void setRolesList(List<Roles> rolesList) {
+        this.rolesList = rolesList;
+    }
 
     public Integer getId() {
         return id;

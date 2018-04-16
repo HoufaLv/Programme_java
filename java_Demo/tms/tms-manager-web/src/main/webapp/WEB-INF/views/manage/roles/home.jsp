@@ -107,7 +107,6 @@
                         history.go(0);
                     } else{
                         layer.msg(result.message);
-                        history.go(0);
                     }
                 }).error(function () {
                     layer.msg("服务器忙,请稍后再试");

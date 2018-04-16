@@ -91,7 +91,7 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.ksit.tms.entity.AccountRolesKey">
+  <insert id="insert" parameterType="com.ksit.tms.entity.AccountRolesKey" useGeneratedKeys="true" keyProperty="id">
     insert into t_account_roles (t_account_id, t_roles_id)
     values (#{tAccountId,jdbcType=INTEGER}, #{tRolesId,jdbcType=INTEGER})
   </insert>

@@ -5,7 +5,6 @@ import com.ksit.tms.entity.Permission;
 import com.ksit.tms.entity.Roles;
 import com.ksit.tms.exception.ServiceException;
 import com.ksit.tms.service.RolePermissionService;
-import org.apache.ibatis.javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;

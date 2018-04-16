@@ -18,4 +18,11 @@ public interface AccountService {
      * @throws ServiceException  登陆失败可能会引发业务异常
      */
     public Account login(String mobile,String password,String loginIp) throws ServiceException;
+
+    /**
+     * 添加账户
+     * @param account       账户
+     * @param rolesIds      roles id
+     */
+    void insertAccount(Account account, Integer[] rolesIds);
 }

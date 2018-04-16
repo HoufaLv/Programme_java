@@ -3,9 +3,12 @@ package com.ksit.tms.service.impl;
 import com.ksit.tms.entity.Account;
 import com.ksit.tms.entity.AccountExample;
 import com.ksit.tms.entity.AccountLoginLog;
+import com.ksit.tms.entity.AccountRolesKey;
 import com.ksit.tms.exception.ServiceException;
 import com.ksit.tms.mapper.AccountLoginLogMapper;
 import com.ksit.tms.mapper.AccountMapper;
+import com.ksit.tms.mapper.AccountRolesMapper;
+import com.ksit.tms.mapper.RolesMapper;
 import com.ksit.tms.service.AccountService;
 
 import org.apache.commons.codec.digest.DigestUtils;
@@ -13,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -30,10 +34,12 @@ public class AccountServiceImpl implements AccountService {
      */
     @Autowired
     private AccountMapper accountMapper;
-
     @Autowired
     private AccountLoginLogMapper accountLoginLogMapper;
-
+    @Autowired
+    private RolesMapper rolesMapper;
+    @Autowired
+    private AccountRolesMapper accountRolesMapper;
 
     /**
      * 记录日志
@@ -85,5 +91,32 @@ public class AccountServiceImpl implements AccountService {
         } else {
             throw new ServiceException("账号或密码错误");
         }
+    }
+
+    /**
+     * 添加账户
+     *
+     * @param account  账户
+     * @param rolesIds roles id
+     */
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class)
+    public void insertAccount(Account account, Integer[] rolesIds) {
+        account.setCreateTime(new Date());
+        //为账号设置密码,默认为000000
+        account.setAccountPassword(DigestUtils.md5Hex(Account.PAASWORD));
+        account.setAccountState(Account.ACCOUNT_NORMAL);
+        accountMapper.insert(account);
+
+        //增加关联关系
+        for (Integer i : rolesIds) {
+            AccountRolesKey accountRolesKey = new AccountRolesKey();
+            accountRolesKey.settAccountId(account.getId());
+            accountRolesKey.settRolesId(i);
+            accountRolesMapper.insert(accountRolesKey);
+        }
+
+        logger.info("添加账户{}",account);
+
     }
 }

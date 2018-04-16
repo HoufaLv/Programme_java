@@ -227,7 +227,6 @@ public class RolePermissionServiceImpl implements RolePermissionService {
             throw new ServiceException("角色绑定有权限,无法删除");
         }
 
-
         rolesMapper.deleteByPrimaryKey(id);
     }
 
