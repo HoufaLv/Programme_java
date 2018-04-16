@@ -33,7 +33,7 @@
                 </div>
                 <div class="box-body">
                     <%-- 不写action 就是从哪里来,回到哪个路径中去 --%>
-                    <form method="post" id="addRolesForm">
+                    <form method="post" id="updateRolesForm">
                         <div class="form-group">
                             <label>角色名称</label>
                             <input type="text" name="rolesName" class="form-control" value="${roles.rolesName}">
@@ -45,13 +45,13 @@
 
                         <table class="table tree">
                             <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>权限名称</th>
-                                    <th>权限代号</th>
-                                    <th>资源URL</th>
-                                    <th>类型</th>
-                                </tr>
+                            <tr>
+                                <th></th>
+                                <th>权限名称</th>
+                                <th>权限代号</th>
+                                <th>资源URL</th>
+                                <th>类型</th>
+                            </tr>
                             </thead>
                             <tbody>
                             <%--展示从后台查出来的权限List--%>
@@ -64,7 +64,9 @@
                                     <c:when test="${entry.key.parentId==0}">
                                         <tr class="treegrid-${permission.id} treegrid-expanded">
                                             <td>
-                                                <input type="checkbox" name="permissionId" ${entry.value ? 'checked' : ''} value="${entry.key.id}">
+                                                <input type="checkbox"
+                                                       name="permissionId" ${entry.value ? 'checked' : ''}
+                                                       value="${entry.key.id}">
                                             </td>
                                             <td>${entry.key.permissionName}</td>
                                             <td>${entry.key.permissionCode}</td>
@@ -75,7 +77,9 @@
                                     <c:otherwise>
                                         <tr class="treegrid-${entry.key.id} treegrid-expanded treegrid-parent-${entry.key.parentId}">
                                             <td>
-                                                <input type="checkbox" name="permissionId"  ${entry.value ? 'checked' : ''} value="${entry.key.id}">
+                                                <input type="checkbox"
+                                                       name="permissionId"  ${entry.value ? 'checked' : ''}
+                                                       value="${entry.key.id}">
                                             </td>
                                             <td>${entry.key.permissionName}</td>
                                             <td>${entry.key.permissionCode}</td>
@@ -86,25 +90,6 @@
                                 </c:choose>
 
                             </c:forEach>
-                            <%--测试 树形结构--%>
-                            <%--<tr class="treegrid-1">
-                                <td>权限管理</td>
-                                <td>permission : home</td>
-                                <td></td>
-                                <td><a href="">删除</a> <a href="">修改</a></td>
-                            </tr>
-                            <tr class="treegrid-2 treegrid-parent-1">
-                                <td>添加权限</td>
-                                <td>permission : add</td>
-                                <td></td>
-                                <td><a href="">删除</a> <a href="">修改</a></td>
-                            </tr>
-                            <tr class="treegrid-3 treegrid-parent-1">
-                                <td>修改权限</td>
-                                <td>permission : edit</td>
-                                <td></td>
-                                <td><a href="">删除</a> <a href="">修改</a></td>
-                            </tr>--%>
                             </tbody>
                             <tfoot></tfoot>
 
@@ -135,8 +120,7 @@
 <script>
     $(function () {
         $("#saveBtn").click(function () {
-            $("#addRolesForm").submit();
-
+            $("#updateRolesForm").submit();
 
         });
     });

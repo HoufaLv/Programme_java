@@ -80,4 +80,11 @@ public interface RolePermissionService {
      * @return          角色对象
      */
     Roles selectRoleWithPermissionById(Integer id);
+
+    /**
+     * 更新roles
+     * @param roles
+     * @param permissionId
+     */
+    void updateRoles(Roles roles, Integer[] permissionId);
 }

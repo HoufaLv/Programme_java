@@ -17,6 +17,7 @@ import java.util.List;
 
 /**
  * 权限和角色的 业务层
+ *
  * @author Lvhoufa
  */
 @Service
@@ -56,7 +57,7 @@ public class RolePermissionServiceImpl implements RolePermissionService {
     @Override
     public void insertPermission(Permission permission) {
         permissionMapper.insertSelective(permission);
-        logger.info("新增权限: {}",permission);
+        logger.info("新增权限: {}", permission);
 
     }
 
@@ -69,13 +70,13 @@ public class RolePermissionServiceImpl implements RolePermissionService {
     public List<Permission> selectAll() {
         PermissionExample permissionExample = new PermissionExample();
         /*递归一下,将数据归类,用于将前端数据展示*/
-       return permissionMapper.selectByExample(permissionExample);
+        return permissionMapper.selectByExample(permissionExample);
     }
 
     /**
      * 根据id 来删除权限
      *
-     * @param id        权限的id
+     * @param id 权限的id
      */
     @Override
     public void deletePermission(Integer id) {
@@ -111,7 +112,7 @@ public class RolePermissionServiceImpl implements RolePermissionService {
         permissionExample.createCriteria().andParentIdEqualTo(id);
 
         List<Permission> permissionList = permissionMapper.selectByExample(permissionExample);
-        if(permissionList != null && !permissionList.isEmpty()) {
+        if (permissionList != null && !permissionList.isEmpty()) {
             throw new ServiceException("该权限下有子节点，删除失败");
         }
 
@@ -120,18 +121,19 @@ public class RolePermissionServiceImpl implements RolePermissionService {
         rolesPermissionExample.createCriteria().andTPermissionIdEqualTo(id);
 
         List<RolesPermissionKey> rolesPermissionKeyList = rolesPermissionMapper.selectByExample(rolesPermissionExample);
-        if(rolesPermissionKeyList != null && !rolesPermissionKeyList.isEmpty()) {
+        if (rolesPermissionKeyList != null && !rolesPermissionKeyList.isEmpty()) {
             throw new ServiceException("该权限被角色引用，删除失败");
         }
         //如果没有被使用，则可以直接删除
         Permission permission = permissionMapper.selectByPrimaryKey(id);
         permissionMapper.deleteByPrimaryKey(id);
-        logger.info("删除权限 {}",permission);
+        logger.info("删除权限 {}", permission);
     }
 
     /**
      * 新增角色
      * 要使用事务
+     *
      * @param roles        要添加的角色
      * @param permissionId 对应的权限列表
      */
@@ -144,7 +146,7 @@ public class RolePermissionServiceImpl implements RolePermissionService {
         rolesMapper.insertSelective(roles);
 
         //保存角色和权限的对应关系,每有一条关联关系,就在数据库中保存一下
-        if (permissionId!=null && permissionId.length!=0){
+        if (permissionId != null && permissionId.length != 0) {
             for (Integer i :
                     permissionId) {
 
@@ -160,7 +162,7 @@ public class RolePermissionServiceImpl implements RolePermissionService {
         }
 
         //记录日志
-        logger.info("保存角色 {}",roles);
+        logger.info("保存角色 {}", roles);
 
     }
 
@@ -195,7 +197,7 @@ public class RolePermissionServiceImpl implements RolePermissionService {
 
         permissionMapper.updateByPrimaryKey(permission);
         //permissionMapper.updateByPrimaryKeySelective(permission);
-        logger.info("更新权限 {}",permission);
+        logger.info("更新权限 {}", permission);
     }
 
     /**
@@ -221,7 +223,7 @@ public class RolePermissionServiceImpl implements RolePermissionService {
         RolesPermissionExample rolesPermissionExample = new RolesPermissionExample();
         rolesPermissionExample.createCriteria().andTRolesIdEqualTo(id);
         List<RolesPermissionKey> rolesPermissionKeys = rolesPermissionMapper.selectByExample(rolesPermissionExample);
-        if (rolesPermissionKeys!=null && !rolesPermissionKeys.isEmpty()){
+        if (rolesPermissionKeys != null && !rolesPermissionKeys.isEmpty()) {
             throw new ServiceException("角色绑定有权限,无法删除");
         }
 
@@ -239,5 +241,32 @@ public class RolePermissionServiceImpl implements RolePermissionService {
     public Roles selectRoleWithPermissionById(Integer id) {
         Roles roles = rolesMapper.selectRoleWithPermissionById(id);
         return roles;
+    }
+
+    /**
+     * 更新roles
+     *
+     * @param roles
+     * @param permissionId
+     */
+    @Override
+    public void updateRoles(Roles roles, Integer[] permissionId) {
+        //删除对应关系
+        //从rolesPermission 表中删除所有roles.id 的记录
+        RolesPermissionExample rolesPermissionExample = new RolesPermissionExample();
+        rolesPermissionExample.createCriteria().andTRolesIdEqualTo(roles.getId());
+        rolesPermissionMapper.deleteByExample(rolesPermissionExample);
+
+        //重建关系
+        //遍历数组,创建对应关系类,将一条一条的对应关系添加进数据库
+        for (Integer i : permissionId) {
+            RolesPermissionKey rolesPermissionKey = new RolesPermissionKey();
+            rolesPermissionKey.settRolesId(roles.getId());
+            rolesPermissionKey.settPermissionId(i);
+            rolesPermissionMapper.insert(rolesPermissionKey);
+        }
+
+        //记录日志
+        logger.info("更新角色{}",roles);
     }
 }
