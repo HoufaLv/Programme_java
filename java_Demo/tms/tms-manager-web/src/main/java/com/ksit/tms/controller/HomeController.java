@@ -22,12 +22,26 @@ public class HomeController {
 
     @GetMapping(value = "/")
     public String defaultOption() {
-        return "redirect:/login";
+        /*return "redirect:/login";*/
+        return "account/login";
     }
 
+    /**
+     * 登陆成功后的页面
+     * @return
+     */
     @GetMapping(value = "/home")
     public String home(){
         return "home";
+    }
+
+    /**
+     * 未授权页面
+     * @return
+     */
+    @GetMapping(value = "/401")
+    public String unauthorizedUrl(){
+        return "error/401";
     }
 
     /**
@@ -48,13 +62,13 @@ public class HomeController {
             Account account = accountService.login(mobile, passWord, httpServletRequest.getRemoteAddr());
             httpServletRequest.getSession().setAttribute("login_account",account);
 
-            return "redirect:/home";
+            return "home";
         } catch (ServiceException e) {
 
             //抛出异常则为登录失败,将失败信息传回页面上,在页面上显示账号,不用重新输入
             redirectAttributes.addFlashAttribute("message",e.getMessage());
             redirectAttributes.addFlashAttribute("mobile",mobile);
-            return "redirect:/login";
+            return "/";
         }
 
     }
