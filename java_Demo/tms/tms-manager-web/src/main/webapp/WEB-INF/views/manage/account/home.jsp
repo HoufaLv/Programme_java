@@ -76,7 +76,7 @@
                                     <fmt:formatDate value="${account.createTime}"/>
                                 </td>
                                 <td>
-                                    <a class="btn btn-success btn-xs" href="/manage/account/${account.id}/edit">修改</a>
+                                    <a class="btn btn-success btn-xs" href="/manage/account/${account.id}/update">修改</a>
                                     <a rel="${account.id}" class="btn btn-danger btn-xs delAccount" href="javascirpt:;">删除</a>
                                 </td>
                             </tr>

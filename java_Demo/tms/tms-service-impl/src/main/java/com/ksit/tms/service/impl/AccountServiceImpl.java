@@ -178,4 +178,42 @@ public class AccountServiceImpl implements AccountService {
     public List<Roles> selectRolesByAccountId(Integer id) {
         return  rolesMapper.selectRoleByAccountId(id);
     }
+
+    /**
+     * 更新账户
+     *
+     * @param account 要更新的账户
+     * @param rolesId 角色列表
+     */
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class)
+    public void updateAccount(Account account, Integer[] rolesId) {
+        account.setUpdateTime(new Date());
+
+        //修改账户
+        /*Account account1 = accountMapper.selectByPrimaryKey(account.getId());
+        if (account1==null){
+            throw new ServiceException("账户不存在");
+        }*/
+        accountMapper.updateByPrimaryKeySelective(account);
+
+        //删除账户和角色的对应关系
+        AccountRolesExample accountRolesExample = new AccountRolesExample();
+        accountRolesExample.createCriteria().andTAccountIdEqualTo(account.getId());
+        accountRolesMapper.deleteByExample(accountRolesExample);
+        
+        //重建关联关系
+        if (rolesId!=null){
+            for (Integer i : rolesId) {
+                AccountRolesKey accountRolesKey = new AccountRolesKey();
+                accountRolesKey.settAccountId(account.getId());
+                accountRolesKey.settRolesId(i);
+                //添加关系
+                accountRolesMapper.insertSelective(accountRolesKey);
+            }
+        }
+
+
+        logger.info("修改账户{}",account);
+    }
 }

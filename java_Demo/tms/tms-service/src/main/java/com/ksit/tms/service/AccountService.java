@@ -56,4 +56,12 @@ public interface AccountService {
      * @return
      */
     List<Roles> selectRolesByAccountId(Integer id);
+
+    /**
+     * 更新账户
+     * @param account           要更新的账户
+     * @param rolesId           角色列表
+     */
+    void updateAccount(Account account, Integer[] rolesId);
+
 }
