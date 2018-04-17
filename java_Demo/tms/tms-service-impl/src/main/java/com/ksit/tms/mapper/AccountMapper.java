@@ -3,6 +3,8 @@ package com.ksit.tms.mapper;
 import com.ksit.tms.entity.Account;
 import com.ksit.tms.entity.AccountExample;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 
@@ -28,4 +30,6 @@ public interface AccountMapper {
     int updateByPrimaryKeySelective(Account record);
 
     int updateByPrimaryKey(Account record);
+
+    List<Account> findAllWithRolesByQueryParam(Map<String, Object> requestParam);
 }

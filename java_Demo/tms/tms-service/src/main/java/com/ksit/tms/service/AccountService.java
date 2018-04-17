@@ -1,7 +1,11 @@
 package com.ksit.tms.service;
 
 import com.ksit.tms.entity.Account;
+import com.ksit.tms.entity.Roles;
 import com.ksit.tms.exception.ServiceException;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * 账号相关的业务接口
@@ -25,4 +29,31 @@ public interface AccountService {
      * @param rolesIds      roles id
      */
     void insertAccount(Account account, Integer[] rolesIds);
+
+    /**
+     * 动态查询,拼装sql
+     * @param requestParam
+     * @return
+     */
+    Object findAllAccountWithRolesByQueryParam(Map<String, Object> requestParam);
+
+    /**
+     * 根据id 删除账户
+     * @param id
+     */
+    void deleteAccount(Integer id);
+
+    /**
+     * 根据id 查询账户
+     * @param id
+     * @return
+     */
+    Account selectById(Integer id);
+
+    /**
+     * 根据id来查询账户对应的角色
+     * @param id
+     * @return
+     */
+    List<Roles> selectRolesByAccountId(Integer id);
 }

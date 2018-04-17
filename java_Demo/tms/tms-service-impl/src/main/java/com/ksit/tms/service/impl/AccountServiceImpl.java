@@ -1,9 +1,6 @@
 package com.ksit.tms.service.impl;
 
-import com.ksit.tms.entity.Account;
-import com.ksit.tms.entity.AccountExample;
-import com.ksit.tms.entity.AccountLoginLog;
-import com.ksit.tms.entity.AccountRolesKey;
+import com.ksit.tms.entity.*;
 import com.ksit.tms.exception.ServiceException;
 import com.ksit.tms.mapper.AccountLoginLogMapper;
 import com.ksit.tms.mapper.AccountMapper;
@@ -20,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 账号相关的业务实现类
@@ -28,6 +26,7 @@ import java.util.List;
  */
 @Service
 public class AccountServiceImpl implements AccountService {
+
 
     /**
      * 将会自动注入 mapper实现类
@@ -118,5 +117,65 @@ public class AccountServiceImpl implements AccountService {
 
         logger.info("添加账户{}",account);
 
+    }
+
+    /**
+     * 动态查询,拼装sql
+     *
+     * @param requestParam
+     * @return
+     */
+    @Override
+    public List<Account> findAllAccountWithRolesByQueryParam(Map<String, Object> requestParam) {
+        return accountMapper.findAllWithRolesByQueryParam(requestParam);
+    }
+
+    /**
+     * 根据id 删除账户
+     *
+     * @param id
+     */
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class)
+    public void deleteAccount(Integer id) {
+        //检查账户是否存在
+        Account account = accountMapper.selectByPrimaryKey(id);
+        if (account==null){
+            throw new ServiceException("账户不存在");
+        }
+
+        //如果账户存在的话,再去查有没有关联关系
+        AccountRolesExample accountRolesExample = new AccountRolesExample();
+        accountRolesExample.createCriteria().andTAccountIdEqualTo(id);
+        List<AccountRolesKey> accountRolesKeys = accountRolesMapper.selectByExample(accountRolesExample);
+
+        //没有关联关系
+        if (accountRolesKeys!=null && !accountRolesKeys.isEmpty()){
+            throw new ServiceException("该账户绑定有角色,无法删除");
+        }
+        accountMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 根据id 查询账户
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public Account selectById(Integer id) {
+
+        return  accountMapper.selectByPrimaryKey(id);
+    }
+
+    /**
+     * 根据id来查询账户对应的角色
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Roles> selectRolesByAccountId(Integer id) {
+        return  rolesMapper.selectRoleByAccountId(id);
     }
 }

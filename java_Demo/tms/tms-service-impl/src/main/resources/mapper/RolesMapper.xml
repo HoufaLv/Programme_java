@@ -185,6 +185,21 @@
         LEFT JOIN t_permission ON t_permission.id = t_roles_permission.t_permission_id
         where t_roles.id = #{id}
     </select>
+    <select id="selectRoleByAccountId" resultType="com.ksit.tms.entity.Roles">
+        select
+        *
+        from
+        t_roles
+        where id in (
+          select
+            t_roles_id
+            from
+            t_account_roles
+            where
+            t_account_id = #{id}
+        )
+
+    </select>
 
     <resultMap id="RolesWithType" type="com.ksit.tms.entity.Roles" extends="BaseResultMap">
         <collection property="permissionList" ofType="Permission">

@@ -36,4 +36,6 @@ public interface RolesMapper {
      * @return          角色
      */
     Roles selectRoleWithPermissionById(Integer id);
+
+    List<Roles> selectRoleByAccountId(Integer id);
 }
