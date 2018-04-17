@@ -50,7 +50,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a href="/manage/account">
                     <i class="fa fa-th"></i> <span>账号管理</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>

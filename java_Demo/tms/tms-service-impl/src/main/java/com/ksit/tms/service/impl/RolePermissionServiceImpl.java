@@ -194,9 +194,9 @@ public class RolePermissionServiceImpl implements RolePermissionService {
      */
     @Override
     public void updatePermission(Permission permission) {
+        permission.setUpdateTime(new Date());
+        permissionMapper.updateByPrimaryKeySelective(permission);
 
-        permissionMapper.updateByPrimaryKey(permission);
-        //permissionMapper.updateByPrimaryKeySelective(permission);
         logger.info("更新权限 {}", permission);
     }
 
@@ -250,6 +250,10 @@ public class RolePermissionServiceImpl implements RolePermissionService {
      */
     @Override
     public void updateRoles(Roles roles, Integer[] permissionId) {
+
+        roles.setUpdateTime(new Date());
+        rolesMapper.updateByPrimaryKeySelective(roles);
+
         //删除对应关系
         //从rolesPermission 表中删除所有roles.id 的记录
         RolesPermissionExample rolesPermissionExample = new RolesPermissionExample();
