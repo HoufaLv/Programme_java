@@ -1,6 +1,7 @@
 package com.ksit.tms.service;
 
 import com.ksit.tms.entity.Account;
+import com.ksit.tms.entity.AccountLoginLog;
 import com.ksit.tms.entity.Roles;
 import com.ksit.tms.exception.ServiceException;
 
@@ -64,4 +65,16 @@ public interface AccountService {
      */
     void updateAccount(Account account, Integer[] rolesId);
 
+    /**
+     * 根据手机号判断账户是否存在
+     * @param userMobile
+     * @return
+     */
+    Account selectByMobile(String userMobile);
+
+    /**
+     * 插入账户登陆日志信息
+     * @param accountLoginLog
+     */
+    void insertAccountLoginLog(AccountLoginLog accountLoginLog);
 }

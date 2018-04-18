@@ -207,6 +207,9 @@
         </choose>
         order by t_account.id desc
     </select>
+    <select id="selectByMobile" resultType="com.ksit.tms.entity.Account">
+        select * from t_account where account_mobile = #{userMobile}
+    </select>
     <resultMap id="accountWithRolesMap" type="com.ksit.tms.entity.Account" extends="BaseResultMap">
         <collection property="rolesList" ofType="Roles">
             <id property="id" column="rolesId"/>

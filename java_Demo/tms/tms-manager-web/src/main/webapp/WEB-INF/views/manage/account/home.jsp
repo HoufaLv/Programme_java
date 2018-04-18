@@ -76,7 +76,9 @@
                                     <fmt:formatDate value="${account.createTime}"/>
                                 </td>
                                 <td>
+                                    <shiro:hasPermission name="account:update">
                                     <a class="btn btn-success btn-xs" href="/manage/account/${account.id}/update">修改</a>
+                                    </shiro:hasPermission>
                                     <a rel="${account.id}" class="btn btn-danger btn-xs delAccount" href="javascirpt:;">删除</a>
                                 </td>
                             </tr>

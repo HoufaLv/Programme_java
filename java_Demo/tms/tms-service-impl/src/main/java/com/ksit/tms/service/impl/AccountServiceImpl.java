@@ -216,4 +216,29 @@ public class AccountServiceImpl implements AccountService {
 
         logger.info("修改账户{}",account);
     }
+
+    /**
+     * 根据手机号判断账户是否存在
+     *
+     * @param userMobile
+     * @return
+     */
+    @Override
+    public Account selectByMobile(String userMobile) {
+        AccountExample accountExample = new AccountExample();
+        accountExample.createCriteria().andAccountMobileEqualTo(userMobile);
+        accountMapper.selectByExample(accountExample);
+
+        return accountMapper.selectByExample(accountExample).get(0);
+    }
+
+    /**
+     * 插入账户登陆日志信息
+     *
+     * @param accountLoginLog
+     */
+    @Override
+    public void insertAccountLoginLog(AccountLoginLog accountLoginLog) {
+        accountLoginLogMapper.insert(accountLoginLog);
+    }
 }

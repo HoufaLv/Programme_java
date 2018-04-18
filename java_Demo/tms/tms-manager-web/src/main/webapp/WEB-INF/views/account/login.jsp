@@ -38,7 +38,7 @@
             <p class="alert alert-danger">${message}</p>
         </c:if>
 
-        <form action="/login" method="post">
+        <form method="post">
             <div class="form-group has-feedback">
                 <input name="mobile" type="text" class="form-control" placeholder="电话号码" value="${mobile}">
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -51,7 +51,7 @@
                 <div class="col-xs-8">
                     <div class="checkbox icheck">
                         <label>
-                            <input type="checkbox"> 保持登陆状态
+                            <input type="checkbox" name="rememberMe"> 保持登陆状态
                         </label>
                     </div>
                 </div>

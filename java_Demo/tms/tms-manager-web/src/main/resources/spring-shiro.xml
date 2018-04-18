@@ -3,10 +3,26 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!--region cookie配置相关,securityManager 需要引用该节点-->
+
+    <bean id="simpleCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <property name="maxAge" value="604800"/>
+        <property name="httpOnly" value="true"/>
+        <!--这个可能跟前端传过来得有关系,前端input 框中name 叫啥,这个叫啥-->
+        <property name="name" value="rememberMe"/>
+    </bean>
+
+    <bean id="cookieRememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
+        <property name="cookie" ref="simpleCookie"/>
+        <property name="cipherKey" value="#{T(org.apache.shiro.codec.Base64).decode('4AvVhmFLUs0KTA3Kprsdag==')}"/>
+     </bean>
+    <!--endregion-->
+
     <!--1. 配置SecurityManager-->
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
         <property name="cacheManager" ref="cacheManager"/>
         <property name="realm" ref="ShiroRealm"/>
+        <property name="rememberMeManager" ref="cookieRememberMeManager"/>
     </bean>
 
     <!--2.配置缓存管理器（可选）-->
@@ -31,8 +47,8 @@
     <!--6. 配置ShiroFilter id必须和web.xml中的filter节点的filter-name相同-->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
-        <!--配置登录的URL-->
-        <property name="loginUrl" value="/login"/>
+        <!--配置登录的URL,这个loginUrl 是在Controller 中的getMapping 的映射对应的url-->
+        <property name="loginUrl" value="/"/>
         <!--登录成功后的URL-->
         <!-- 这几个路径需要和Controller 中的映射保持一致 -->
         <property name="successUrl" value="/home"/>
@@ -42,12 +58,20 @@
             <!--  静态资源-->
             <!-- /static 下的所有资源放行 -->
             <!-- /** 除了/static 下的文件,剩下所有的文件都需要过滤 -->
+            <!-- anon: 不登录也可以访问 -->
+            <!-- authc: 被认证才能访问 -->
+            <!-- user: 被认证或者被记住,都可以访问 -->
+            <!-- 添加自定义得权限 -->
             <value>
                 /favicon.ico = anon
                 /static/** = anon
-                /** = authc
+                /logout = logout
+                /manage/account/*/update = perms[account:update]
+                /** = user
             </value>
         </property>
     </bean>
+
+
 
 </beans>
