@@ -107,7 +107,7 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.ksit.tms.entity.TicketStore">
+  <insert id="insert" parameterType="com.ksit.tms.entity.TicketStore" useGeneratedKeys="true" keyProperty="id">
     insert into ticket_store (id, store_name, store_address, 
       store_tel, store_manager, store_register_time, 
       store_close_time, store_identity, store_manager_identity, 

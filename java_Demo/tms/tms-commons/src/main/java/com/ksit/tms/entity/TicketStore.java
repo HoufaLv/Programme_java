@@ -7,6 +7,7 @@ import java.util.Date;
  * @author 
  */
 public class TicketStore implements Serializable {
+
     private Integer id;
 
     /**

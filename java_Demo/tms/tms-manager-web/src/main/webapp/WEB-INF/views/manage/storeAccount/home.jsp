@@ -32,14 +32,26 @@
 
         <section class="content-header">
             <h1>
-                销售点账户管理,在这显示所有销售点账户
+                销售点账户管理
             </h1>
         </section>
 
         <section class="content">
+
+            <%-- 动态搜索框 --%>
+                <div class="box">
+                    <div class="box-body">
+                        <form method="get" class="form-inline">
+                            <input type="text" name="storeName" class="form-control" placeholder="售票点名称" value="${param.storeName}">
+                            <input type="text" name="storeManager" class="form-control" placeholder="联系人" value="${param.storeManager}">
+                            <input type="text" name="storeTel" class="form-control" placeholder="联系电话" value="${param.storeTel}">
+                            <button class="btn btn-default">搜索</button>
+                        </form>
+                    </div>
+                </div>
+
             <%--展示账号--%>
             <div class="box">
-
                 <%--新增账号选项--%>
                 <div class="box-header">
                     <div class="box-tools">
@@ -48,6 +60,24 @@
                 </div>
 
                 <div class="box-body">
+                    <table class="table">
+                         <tr>
+                             <th>营业点名称</th>
+                             <th>营业点地址</th>
+                             <th>营业点电话</th>
+                             <th>营业点法人</th>
+                             <th>操作</th>
+                         </tr>
+                        <c:forEach items="${ticketStoreList}" var="ticketStore">
+                            <tr>
+                                <td>${ticketStore.storeName}</td>
+                                <td>${ticketStore.storeAddress}</td>
+                                <td>${ticketStore.storeTel}</td>
+                                <td>${ticketStore.storeManager}</td>
+                                <td><a href="/manage/storeAcc/${ticketStore.id}/update" class="btn btn-primary">修改</a> <a href="javascript:;" class="btn btn-danger">删除</a> </td>
+                            </tr>
+                        </c:forEach>
+                    </table>
                 </div>
 
             </div>
@@ -67,22 +97,6 @@
 <script src="/static/plugins/layer/layer.js"></script>
 <script>
 
-    $(".delAccount").click(function () {
-        var id = $(this).attr("rel");
-        layer.confirm("确定要删除吗",function (index) {
-            layer.close(index);
-            $.get("/manage/account/"+id+"/del").done(function (result) {
-                if (result.status == 'success') {
-                    layer.msg("删除成功");
-                    history.go(0);
-                }else{
-                    layer.msg(result.message);
-                }
-            }).error(function () {
-                layer.msg("服务器忙,请稍后再试")
-            });
-        })
-    });
 </script>
 </body>
 </html>
