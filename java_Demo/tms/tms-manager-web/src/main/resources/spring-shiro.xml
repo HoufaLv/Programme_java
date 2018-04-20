@@ -44,6 +44,18 @@
         <property name="securityManager" ref="securityManager"/>
     </bean>
 
+    <!--<bean id="filterChainDefinition" class="com.ksit.tms.shiro.CustomerFilterChainDefinition">
+        &lt;!&ndash;<property name="shiroFilter" ref="shiroFilter"/>&ndash;&gt;
+        <property name="filterChainDefinitions">
+            <value>
+                /favicon.ico = anon
+                /static/** = anon
+                /logout = logout
+                /manage/account/*/update = perms[account:update]
+            </value>
+        </property>
+    </bean>-->
+
     <!--6. 配置ShiroFilter id必须和web.xml中的filter节点的filter-name相同-->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
@@ -54,14 +66,14 @@
         <property name="successUrl" value="/home"/>
         <!--访问没有权限的资源跳转的URL-->
         <property name="unauthorizedUrl" value="/401"/>
-        <property name="filterChainDefinitions">
-            <!--  静态资源-->
-            <!-- /static 下的所有资源放行 -->
-            <!-- /** 除了/static 下的文件,剩下所有的文件都需要过滤 -->
-            <!-- anon: 不登录也可以访问 -->
-            <!-- authc: 被认证才能访问 -->
-            <!-- user: 被认证或者被记住,都可以访问 -->
-            <!-- 添加自定义得权限 -->
+        <!--<property name="filterChainDefinitions">
+            &lt;!&ndash;  静态资源&ndash;&gt;
+            &lt;!&ndash; /static 下的所有资源放行 &ndash;&gt;
+            &lt;!&ndash; /** 除了/static 下的文件,剩下所有的文件都需要过滤 &ndash;&gt;
+            &lt;!&ndash; anon: 不登录也可以访问 &ndash;&gt;
+            &lt;!&ndash; authc: 被认证才能访问 &ndash;&gt;
+            &lt;!&ndash; user: 被认证或者被记住,都可以访问 &ndash;&gt;
+            &lt;!&ndash; 添加自定义得权限 &ndash;&gt;
             <value>
                 /favicon.ico = anon
                 /static/** = anon
@@ -69,7 +81,7 @@
                 /manage/account/*/update = perms[account:update]
                 /** = user
             </value>
-        </property>
+        </property>-->
     </bean>
 
 

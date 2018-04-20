@@ -79,6 +79,17 @@
                 <i class="fa fa-angle-left pull-right"></i>
             </li>
 
+            <li class="${param.menu=='manage_permission' ? 'active' : ''}">
+                <a href="/manage/storeAcc/home">
+                    <i class="fa fa-pie-chart"></i>
+                    <span>销售点管理</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <i class="fa fa-angle-left pull-right"></i>
+            </li>
+
 
 
     </section>
