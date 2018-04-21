@@ -87,4 +87,18 @@ public interface RolePermissionService {
      * @param permissionId
      */
     void updateRoles(Roles roles, Integer[] permissionId);
+
+    /**
+     * 根据账户的id 来查找对应的所有角色
+     * @param id
+     * @return
+     */
+    List<Roles> selectRoleByAccountId(Integer id);
+
+    /**
+     * 根据角色id 去查找对应的所有权限
+     * @param id
+     * @return
+     */
+    List<Permission> selectPermissionByRolesId(Integer id);
 }

@@ -1,4 +1,4 @@
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt_rt"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt_rt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
@@ -76,9 +76,10 @@
                                     <fmt:formatDate value="${account.createTime}"/>
                                 </td>
                                 <td>
-                                    <shiro:hasPermission name="account:update">
-                                    <a class="btn btn-success btn-xs" href="/manage/account/${account.id}/update">修改</a>
-                                    </shiro:hasPermission>
+                                    <shiro:hasRole name="superAdmin">
+                                        <a class="btn btn-success btn-xs"
+                                           href="/manage/account/${account.id}/update">修改</a>
+                                    </shiro:hasRole>
                                     <a rel="${account.id}" class="btn btn-danger btn-xs delAccount" href="javascirpt:;">删除</a>
                                 </td>
                             </tr>
@@ -106,13 +107,13 @@
 
     $(".delAccount").click(function () {
         var id = $(this).attr("rel");
-        layer.confirm("确定要删除吗",function (index) {
+        layer.confirm("确定要删除吗", function (index) {
             layer.close(index);
-            $.get("/manage/account/"+id+"/del").done(function (result) {
+            $.get("/manage/account/" + id + "/del").done(function (result) {
                 if (result.status == 'success') {
                     layer.msg("删除成功");
                     history.go(0);
-                }else{
+                } else {
                     layer.msg(result.message);
                 }
             }).error(function () {

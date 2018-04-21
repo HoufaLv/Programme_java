@@ -1,8 +1,10 @@
 package com.ksit.tms.service.impl;
 
 import com.ksit.tms.entity.StoreAccount;
+import com.ksit.tms.entity.StoreAccountExample;
 import com.ksit.tms.entity.TicketStore;
 import com.ksit.tms.entity.TicketStoreExample;
+import com.ksit.tms.exception.ServiceException;
 import com.ksit.tms.mapper.StoreAccountMapper;
 import com.ksit.tms.mapper.TicketStoreMapper;
 import com.ksit.tms.service.TicketStoreService;
@@ -82,5 +84,33 @@ public class TicketStoreServiceImpl implements TicketStoreService {
     @Override
     public TicketStore selectTIcketStoreById(Integer id) {
         return ticketStoreMapper.selectByPrimaryKey(id);
+    }
+
+    /**
+     * 更新售票点信息
+     */
+    @Override
+    @Transactional()
+    public void updateTicketStore(TicketStore ticketStore) {
+        //1.处理关联关系
+        //2.更新售票点电话的之后,直接把售票点账户给改了,密码为电话号码后六位
+        //根据修改的销售点信息查出销售账户的信息
+        StoreAccount storeAccount = storeAccountMapper.selectByPrimaryKey(ticketStore.getStoreAccountId());
+
+        //判断电话号码是否修改了,如果修改了,就将对应的销售账户的账号给改了,密码为电话号码后六位
+        //如果销售点电话和销售账户的账号不一致,说明修改了
+        if (!storeAccount.getStoreAccount().equals(ticketStore.getStoreTel())){
+            //重新设置账户
+            storeAccount.setStoreAccount(ticketStore.getStoreTel());
+            //重新设置密码
+            storeAccount.setStorePassword(DigestUtils.md5Hex(ticketStore.getStoreTel().substring(5)));
+            storeAccount.setUpdateTime(new Date().toString());
+
+            storeAccountMapper.updateByPrimaryKeySelective(storeAccount);
+        }
+
+        //如果没有修改
+        ticketStoreMapper.updateByPrimaryKeySelective(ticketStore);
+
     }
 }

@@ -53,6 +53,7 @@
                 <div class="box-body">
                     <%-- 将后台传过来的数据在这里进行显示,修改之后再重新提交,不写action 就是从哪来,回哪去 --%>
                     <form method="post" id="saveForm">
+                        <input name="storeAccountId" type="hidden" value="${ticketStore.storeAccountId}">
                         <div class="form-group">
                             <label> 营业点名称 </label>
                             <input type="text" name="storeName" class="form-control" value="${ticketStore.storeName}">

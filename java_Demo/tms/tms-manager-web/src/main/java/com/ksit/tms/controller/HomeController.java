@@ -50,9 +50,6 @@ public class HomeController {
                         HttpServletRequest httpServletRequest,
                         RedirectAttributes redirectAttributes) {
 
-
-
-
         String requestHost = httpServletRequest.getRemoteAddr();
 
         //可以直接获取Subject 对象而不用 配置SecurityManager ,因为在配置文件中已经做了相关定义

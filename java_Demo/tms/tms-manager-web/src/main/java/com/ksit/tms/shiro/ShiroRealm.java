@@ -3,44 +3,75 @@ package com.ksit.tms.shiro;
 
 import com.ksit.tms.entity.Account;
 import com.ksit.tms.entity.AccountLoginLog;
+import com.ksit.tms.entity.Permission;
+import com.ksit.tms.entity.Roles;
 import com.ksit.tms.service.AccountService;
+import com.ksit.tms.service.RolePermissionService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
+import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.Date;
+import java.util.*;
 
 
-/**
- * 自定义领域 继承 AuthorizingRealm 抽象类,因为这个抽象类可以自动判断权限和角色
- *
- * @author Lvhoufa
- */
 public class ShiroRealm extends AuthorizingRealm {
 
     @Autowired
     AccountService accountService;
+    @Autowired
+    RolePermissionService rolePermissionService;
+
 
     private static Logger logger = LoggerFactory.getLogger(ShiroRealm.class);
 
+
     /**
-     * 判断是否授权
-     *
+     * 权限角色相关信息
      * @param principalCollection
      * @return
      */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-        return null;
+        //获取当前登陆对象,这个方法可以获得当前登陆对象
+        Account account = (Account) principalCollection.getPrimaryPrincipal();
+
+        //获取当前登陆对象所拥有的角色,因为存在账户和角色的关联关系,所以应该去rolesPermission这个表中去查对应关系
+        List<Roles> rolesList = rolePermissionService.selectRoleByAccountId(account.getId());
+
+        //获取当前登陆对象所拥有的权限: 因为一个账户可以拥有多个角色,一个角色可能拥有多个权限,所以将角色List 遍历,根据每一个角色去查询所拥有的权限
+        List<Permission> permissionList = new ArrayList<>();
+
+        for (Roles role :rolesList) {
+            //根据每一个角色去查询权限信息,然后添加到permissionList中去,查询权限List 应该去permission 这个表中去查吧
+            List<Permission> permissionList1 = rolePermissionService.selectPermissionByRolesId(role.getId());
+            permissionList.addAll(permissionList1);
+        }
+
+        //验证权限信息需要两个 set 集合,一个是rolesName set,另一个是 permisisonName set
+        Set<String> rolesNameSet = new HashSet<>();
+            //循环遍历list 来添加进入set 集合
+            for (Roles roles : rolesList) {
+                rolesNameSet.add(roles.getRolesCode());
+            }
+        Set<String> permissionNameSet = new HashSet<>();
+            for (Permission permission:permissionList) {
+                permissionNameSet.add(permission.getPermissionCode());
+            }
+
+        SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo();
+        simpleAuthorizationInfo.setRoles(rolesNameSet);
+        simpleAuthorizationInfo.setStringPermissions(permissionNameSet);
+        return simpleAuthorizationInfo;
     }
 
+
     /**
-     * 判断是否通过身份验证
-     *
+     * 身份验证令牌信息
      * @param authenticationToken
      * @return
      * @throws AuthenticationException

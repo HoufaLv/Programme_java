@@ -5,24 +5,24 @@
 
     <!--region cookie配置相关,securityManager 需要引用该节点-->
 
-    <bean id="simpleCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+   <!-- <bean id="simpleCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
         <property name="maxAge" value="604800"/>
         <property name="httpOnly" value="true"/>
-        <!--这个可能跟前端传过来得有关系,前端input 框中name 叫啥,这个叫啥-->
+        &lt;!&ndash;这个可能跟前端传过来得有关系,前端input 框中name 叫啥,这个叫啥&ndash;&gt;
         <property name="name" value="rememberMe"/>
     </bean>
 
     <bean id="cookieRememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
         <property name="cookie" ref="simpleCookie"/>
         <property name="cipherKey" value="#{T(org.apache.shiro.codec.Base64).decode('4AvVhmFLUs0KTA3Kprsdag==')}"/>
-     </bean>
+     </bean>-->
     <!--endregion-->
 
     <!--1. 配置SecurityManager-->
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
         <property name="cacheManager" ref="cacheManager"/>
         <property name="realm" ref="ShiroRealm"/>
-        <property name="rememberMeManager" ref="cookieRememberMeManager"/>
+        <!--<property name="rememberMeManager" ref="cookieRememberMeManager"/>-->
     </bean>
 
     <!--2.配置缓存管理器（可选）-->
@@ -44,17 +44,6 @@
         <property name="securityManager" ref="securityManager"/>
     </bean>
 
-    <!--<bean id="filterChainDefinition" class="com.ksit.tms.shiro.CustomerFilterChainDefinition">
-        &lt;!&ndash;<property name="shiroFilter" ref="shiroFilter"/>&ndash;&gt;
-        <property name="filterChainDefinitions">
-            <value>
-                /favicon.ico = anon
-                /static/** = anon
-                /logout = logout
-                /manage/account/*/update = perms[account:update]
-            </value>
-        </property>
-    </bean>-->
 
     <!--6. 配置ShiroFilter id必须和web.xml中的filter节点的filter-name相同-->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
@@ -66,14 +55,14 @@
         <property name="successUrl" value="/home"/>
         <!--访问没有权限的资源跳转的URL-->
         <property name="unauthorizedUrl" value="/401"/>
-        <!--<property name="filterChainDefinitions">
-            &lt;!&ndash;  静态资源&ndash;&gt;
-            &lt;!&ndash; /static 下的所有资源放行 &ndash;&gt;
-            &lt;!&ndash; /** 除了/static 下的文件,剩下所有的文件都需要过滤 &ndash;&gt;
-            &lt;!&ndash; anon: 不登录也可以访问 &ndash;&gt;
-            &lt;!&ndash; authc: 被认证才能访问 &ndash;&gt;
-            &lt;!&ndash; user: 被认证或者被记住,都可以访问 &ndash;&gt;
-            &lt;!&ndash; 添加自定义得权限 &ndash;&gt;
+        <property name="filterChainDefinitions">
+            <!--  静态资源-->
+            <!-- /static 下的所有资源放行 -->
+            <!-- /** 除了/static 下的文件,剩下所有的文件都需要过滤 -->
+            <!-- anon: 不登录也可以访问 -->
+            <!-- authc: 被认证才能访问 -->
+            <!-- user: 被认证或者被记住,都可以访问 -->
+            <!-- 添加自定义得权限 -->
             <value>
                 /favicon.ico = anon
                 /static/** = anon
@@ -81,7 +70,7 @@
                 /manage/account/*/update = perms[account:update]
                 /** = user
             </value>
-        </property>-->
+        </property>
     </bean>
 
 

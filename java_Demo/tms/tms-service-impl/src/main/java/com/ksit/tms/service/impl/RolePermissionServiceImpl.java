@@ -272,4 +272,28 @@ public class RolePermissionServiceImpl implements RolePermissionService {
         //记录日志
         logger.info("更新角色{}",roles);
     }
+
+    /**
+     * 根据账户的id 来查找对应的所有角色
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Roles> selectRoleByAccountId(Integer id) {
+        return rolesMapper.selectRoleByAccountId(id);
+    }
+
+    /**
+     * 根据角色id 去查找对应的所有权限
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Permission> selectPermissionByRolesId(Integer id) {
+        return permissionMapper.selectPermissionByRolesId(id);
+    }
+
+
 }

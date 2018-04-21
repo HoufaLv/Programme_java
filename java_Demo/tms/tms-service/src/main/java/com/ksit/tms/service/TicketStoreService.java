@@ -27,4 +27,9 @@ public interface TicketStoreService {
      * @return
      */
     TicketStore selectTIcketStoreById(Integer id);
+
+    /**
+     * 更新售票点信息
+     */
+    void updateTicketStore(TicketStore ticketStore);
 }
