@@ -97,4 +97,10 @@ public class TicketStoreController {
         redirectAttributes.addFlashAttribute("message", "修改售票点信息成功");
         return "redirect:/manage/storeAcc/home";
     }
+
+    @GetMapping("/{id:\\d}/del")
+    public String deleteStoreAccount(@PathVariable  Integer id){
+
+        return null;
+    }
 }

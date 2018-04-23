@@ -74,7 +74,8 @@
                                 <td>${ticketStore.storeAddress}</td>
                                 <td>${ticketStore.storeTel}</td>
                                 <td>${ticketStore.storeManager}</td>
-                                <td><a href="/manage/storeAcc/${ticketStore.id}/update" class="btn btn-primary">修改</a> <a href="javascript:;" class="btn btn-danger">删除</a> </td>
+                                <td><a href="/manage/storeAcc/${ticketStore.id}/update" class="btn btn-primary">修改</a>
+                                    <a rel="${ticketStore.id}" href="javascript:;" class="btn btn-danger delTicketStore">删除</a> </td>
                             </tr>
                         </c:forEach>
                     </table>
@@ -96,7 +97,22 @@
 <%-- 引入layer.js --%>
 <script src="/static/plugins/layer/layer.js"></script>
 <script>
+    /* 完成点击按钮,删除账号的功能 */
+    $(function () {
+        $(".delTicketStore").click(function () {
+            var id = $(".delTicketStore").attr("rel");
 
+            layer.confirm("确定要删除该销售点吗",function (index) {
+                layer.close(index);
+
+                $.get("/manage/storeAcc/"+id+"/del").done(function (result) {
+
+                }).error(function () {
+                    layer.msg("服务器异常,请稍后再试")
+                });
+            })
+        });
+    });
 </script>
 </body>
 </html>
