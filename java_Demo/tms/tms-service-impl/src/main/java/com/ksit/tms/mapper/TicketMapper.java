@@ -27,4 +27,11 @@ public interface TicketMapper {
     int updateByPrimaryKeySelective(Ticket record);
 
     int updateByPrimaryKey(Ticket record);
+
+    /**
+     * 批量保存Ticket
+     * @param ticketList
+     */
+    void batchInsertTicket(@Param("ticketList") List<Ticket> ticketList);
+
 }

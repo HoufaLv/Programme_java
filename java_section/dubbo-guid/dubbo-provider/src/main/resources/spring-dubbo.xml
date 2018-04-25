@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+
+    <!-- 服务名称 -->
+    <dubbo:application name="UserServiceProvider"/>
+
+    <!-- 注册中心 -->
+    <dubbo:registry address="zookeeper://192.168.1.82:2181"/>
+
+    <!-- 暴露服务给dubbo -->
+    <!-- 这个是服务提供者 -->
+    <bean id="userService" class="com.ksit.service.impl.UserServiceImpl"/>
+    <!-- 将服务通过dubbo 来往外发 -->
+    <dubbo:service interface="com.ksit.service.UserService" ref="userService"/>
+
+</beans>

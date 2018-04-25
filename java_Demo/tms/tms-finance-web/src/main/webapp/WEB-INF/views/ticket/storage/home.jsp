@@ -37,24 +37,8 @@
         <div class="box">
             <div class="box-header">
                 <h4 class="box-title">新增年票入库</h4>
-            </div>
-            <div class="box-body">
-                <form method="post" id="saveForm">
-                    <div class="form-group">
-                        <label>入库时间</label>
-                        <input type="text" class="form-control" disabled value="${today}">
-                    </div>
-                    <div class="form-group">
-                        <label>起始票号</label>
-                        <input type="text" class="form-control" name="beginTicketNum" id="beginNum">
-                    </div>
-                    <div class="form-group">
-                        <label>截至票号</label>
-                        <input type="text" class="form-control" name="endTicketNum" id="endNum">
-                    </div>
-                </form>
-                <div class="box-footer">
-                    <button class="btn btn-primary pull-right" id="saveBtn">保存</button>
+                <div class="box-tools">
+                    <a href="/ticket/storage/new" class="btn btn-sm btn-success"><i class="fa fa-plus"></i> 新增入库</a>
                 </div>
             </div>
         </div>
