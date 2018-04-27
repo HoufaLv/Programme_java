@@ -107,6 +107,16 @@
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
+    <delete id="batchDelete">
+        delete  from  ticket
+        where
+        id
+        in (
+        <foreach collection="list" item="id" separator=",">
+          #{id}
+        </foreach>
+        )
+    </delete>
     <insert id="insert" parameterType="com.ksit.tms.entity.Ticket">
     insert into ticket (id, ticket_num, ticket_in_time, 
       ticket_state, create_time, update_time, 
@@ -197,6 +207,22 @@
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
+    </select>
+    <select id="selectListByBenginEndAndState" resultType="com.ksit.tms.entity.Ticket">
+        select * from ticket
+        where
+        ticket_num >= CONVERT(#{param1},UNSIGNED INT)
+        and
+        ticket_num &lt;= CONVERT(#{param2},UNSIGNED INT)
+        and
+        ticket_state =#{param3}
+    </select>
+    <select id="selectListByBeginAndEnd" resultType="com.ksit.tms.entity.Ticket">
+        select * from ticket
+        where
+        ticket_num >= CONVERT(#{param1},UNSIGNED INT)
+        and
+        ticket_num &lt;= CONVERT(#{param2},UNSIGNED INT)
     </select>
     <update id="updateByExampleSelective" parameterType="map">
         update ticket

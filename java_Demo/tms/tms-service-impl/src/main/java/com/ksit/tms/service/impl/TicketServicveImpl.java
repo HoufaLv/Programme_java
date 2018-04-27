@@ -2,23 +2,30 @@ package com.ksit.tms.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.ksit.tms.entity.Account;
-import com.ksit.tms.entity.Ticket;
-import com.ksit.tms.entity.TicketInRecord;
-import com.ksit.tms.entity.TicketInRecordExample;
+import com.google.common.base.Function;
+import com.google.common.collect.Collections2;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.ksit.tms.entity.*;
 import com.ksit.tms.exception.ServiceException;
 import com.ksit.tms.mapper.TicketInRecordMapper;
 import com.ksit.tms.mapper.TicketMapper;
+import com.ksit.tms.mapper.TicketOutRecordMapper;
+import com.ksit.tms.mapper.TicketStoreMapper;
 import com.ksit.tms.service.TicketService;
+import com.ksit.tms.util.ShiroUtil;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.annotations.Param;
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.subject.Subject;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Nullable;
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Date;
@@ -36,6 +43,10 @@ public class TicketServicveImpl implements TicketService {
     private TicketInRecordMapper ticketInRecordMapper;
     @Autowired
     private TicketMapper ticketMapper;
+    @Autowired
+    private TicketStoreMapper ticketStoreMapper;
+    @Autowired
+    private TicketOutRecordMapper ticketOutRecordMapper;
 
     /**
      * 新增年票记录
@@ -133,6 +144,126 @@ public class TicketServicveImpl implements TicketService {
         return new PageInfo<>(ticketInRecords);
     }
 
+    /**
+     * 删除年票入库记录
+     * 事务回滚
+     * @param id
+     */
+    @Override
+    @Transactional
+    public void deleteTicketInRecord(Integer id) {
+        TicketInRecord ticketInRecord = ticketInRecordMapper.selectByPrimaryKey(id);
+        //如果ticketInRecord 不为空的话
+        if (ticketInRecord!=null){
+
+            //判断该记录对应的年票数量和入库记录数量是否相同,不相同不能删除
+            //判断票号是否还在入库记录的那个区间内,并且状态是否和入库的时候的一样,如果全部都一样,说明未修改,否则就是修改了
+            //这个查出来的是全部的ticket
+            List<Ticket> ticketList = ticketMapper.selectListByBenginEndAndState(ticketInRecord.getBeginTicketNum(),ticketInRecord.getEndTicketNum(),Ticket.TICKET_STATE_IN_STORE);
+
+            //如果数量不相同
+            if (!ticketInRecord.getTotalNum().equals(ticketList.size())){
+                throw new ServiceException("年票状态已经发生改变,不能删除");
+            }
+
+            //如果没有修改的话,就是年票还和入库的时候状态一样,则可以删除
+            //自己实现删除逻辑
+            ArrayList<Long> idLists = Lists.newArrayList(Collections2.transform(ticketList, new Function<Ticket, Long>() {
+                @Nullable
+                @Override
+                public Long apply(@Nullable Ticket ticket) {
+                    return Long.valueOf(ticket.getId());
+                }
+            }));
+
+            ticketMapper.batchDelete(idLists);
+            ticketInRecordMapper.deleteByPrimaryKey(ticketInRecord.getId());
+
+        }
+    }
+
+    /**
+     * 年票下发记录分页处理
+     *
+     * @param pageNo
+     * @return
+     */
+    @Override
+    public PageInfo<TicketOutRecord> selectTicketOutRecordByPageNo(Integer pageNo) {
+
+        PageInfo<TicketOutRecord> pageInfo = selectTicketOutRecordByPageNoAndQueryParam(pageNo, Maps.newHashMap());
+
+        return pageInfo;
+    }
+
+    /**
+     * 年票下发记录
+     *
+     * @param ticketOutRecord
+     */
+    @Override
+    public void saveTicketOutRecord(TicketOutRecord ticketOutRecord) {
+        //如果输入的票段内有状态非 [已入库状态的],则说明票段被修改过,就不能下发
+        //将前端输入的票段从数据库中查出来,如果其中有一张票的状态不是 [已入库,则不能下发该票段]
+        List<Ticket> ticketList = ticketMapper.selectListByBeginAndEnd(ticketOutRecord.getBeginTicketNum(),ticketOutRecord.getEndTicketNum());
+        for (Ticket t : ticketList) {
+            if (!Ticket.TICKET_STATE_IN_STORE.equals(t.getTicketState())){
+                throw new ServiceException("该票段内存在已下发的票,不可下发该票段");
+            }
+        }
+
+        //获取当前下发的售票点对象,并赋值售票点名称
+        //下发记录中有售票点的id,找到
+        Integer storeAccountId = ticketOutRecord.getStoreAccountId();
+        TicketStore ticketStore = ticketStoreMapper.selectByPrimaryKey(storeAccountId);
+
+        //获取售票点名称
+        String storeName = ticketStore.getStoreName();
+
+        //整理下发的票段的信息,封装为一个TicketOutRecord,前端传过来的只是下发票段,还有其他的信息没有填充
+        ticketOutRecord.setStoreAccountName(storeName);
+        //获取总价格,总价格为单价*数量
+        int totalNumber = ticketList.size();
+        BigDecimal totalPrice = ticketOutRecord.getPrice().multiply(new BigDecimal(totalNumber));
+
+        //获取当前登陆的账号,来对下发记录
+        Account currAccount = ShiroUtil.getCurrAccount();
+        ticketOutRecord.setCreateTime(new Date());
+        ticketOutRecord.setContent(ticketOutRecord.getBeginTicketNum()+"-"+ticketOutRecord.getEndTicketNum());
+        ticketOutRecord.setOutAccountName(currAccount.getAccountName());
+        ticketOutRecord.setOutAccountId(currAccount.getId());
+        ticketOutRecord.setTotalNum(totalNumber);
+        ticketOutRecord.setState(TicketOutRecord.STATE_NO_PAY);
+        ticketOutRecord.setTotalprice(totalPrice);
+
+        ticketOutRecordMapper.insertSelective(ticketOutRecord);
+        logger.info("新增一条年票下发记录{}",ticketOutRecord);
+    }
+
+    /**
+     * 根据当前页号和查询参数去查询分页数据
+     * @param pageNo
+     * @param queryParam
+     * @return
+     */
+    private PageInfo<TicketOutRecord> selectTicketOutRecordByPageNoAndQueryParam(Integer pageNo,Map<String,Object> queryParam){
+        PageHelper.startPage(pageNo,5);
+        TicketOutRecordExample ticketOutRecordExample = new TicketOutRecordExample();
+        TicketOutRecordExample.Criteria criteria = ticketOutRecordExample.createCriteria();
+
+        //如果查询参数中有state 的话,于state 进行比对
+        String state  = (String) queryParam.get("state");
+
+        // TODO: 2018/4/27 0027 无法添加lang3 依赖
+        if (!StringUtils.isEmpty(state)){
+            criteria.andStateEqualTo(state);
+        }
+
+        ticketOutRecordExample.setOrderByClause("id desc");
+        List<TicketOutRecord> ticketOutRecords = ticketOutRecordMapper.selectByExample(ticketOutRecordExample);
+
+        return new PageInfo<>(ticketOutRecords);
+    }
 
     /**
      * 批量插入,解决mybaits 参数找不到的问题

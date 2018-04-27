@@ -1,5 +1,6 @@
 package com.ksit.tms.mapper;
 
+import com.ksit.tms.entity.Ticket;
 import com.ksit.tms.entity.TicketInRecord;
 import com.ksit.tms.entity.TicketInRecordExample;
 import java.util.List;
@@ -27,4 +28,6 @@ public interface TicketInRecordMapper {
     int updateByPrimaryKeySelective(TicketInRecord record);
 
     int updateByPrimaryKey(TicketInRecord record);
+
+
 }
