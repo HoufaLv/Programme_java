@@ -1,6 +1,7 @@
 package com.ksit.tms.controller;
 
 import com.github.pagehelper.PageInfo;
+import com.ksit.tms.com.ksit.tms.dto.ResponseBean;
 import com.ksit.tms.entity.TicketInRecord;
 import com.ksit.tms.entity.TicketOutRecord;
 import com.ksit.tms.entity.TicketStore;
@@ -139,6 +140,17 @@ public class TicketController {
         }
 
         return "redirect:/ticket/out";
+    }
+
+    /**
+     * 删除下发记录
+     * @return
+     */
+    @GetMapping("/out/{id:\\d+}/del")
+    @ResponseBody
+    public ResponseBean delTicketOutRecord(@PathVariable Integer id){
+        ticketService.deleteTicketOutRecord(id);
+        return ResponseBean.success();
     }
 
 }

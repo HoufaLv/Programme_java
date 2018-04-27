@@ -241,6 +241,24 @@ public class TicketServicveImpl implements TicketService {
     }
 
     /**
+     * 删除年票下发记录
+     *
+     * @param id
+     */
+    @Override
+    public void deleteTicketOutRecord(Integer id) {
+        // TODO: 2018/4/27 0027 根据主键查找对应的记录,如果存在的话,执行删除操作
+        // TODO: 2018/4/27 0027 只有未支付的记录才可以删除,已支付的记录将无法删除
+
+        TicketOutRecord ticketOutRecord = ticketOutRecordMapper.selectByPrimaryKey(id);
+        if (ticketOutRecord!=null){
+            if (TicketOutRecord.STATE_NO_PAY.equals(ticketOutRecord.getState())){
+                ticketOutRecordMapper.deleteByPrimaryKey(id);
+            }
+        }
+    }
+
+    /**
      * 根据当前页号和查询参数去查询分页数据
      * @param pageNo
      * @param queryParam

@@ -36,4 +36,10 @@ public interface TicketService {
      * @param ticketOutRecord
      */
     void saveTicketOutRecord(TicketOutRecord ticketOutRecord);
+
+    /**
+     * 删除年票下发记录
+     * @param id
+     */
+    void deleteTicketOutRecord(Integer id);
 }
