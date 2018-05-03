@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 票务相关业务控制器
@@ -151,6 +152,20 @@ public class TicketController {
     public ResponseBean delTicketOutRecord(@PathVariable Integer id){
         ticketService.deleteTicketOutRecord(id);
         return ResponseBean.success();
+    }
+
+    /**
+     * 跳转到盘点统计页面
+     * 并将年票做一下总结
+     * @return
+     */
+    @GetMapping("/chart")
+    public String chartTicket(Model model){
+        // TODO: 2018/4/27 0027 将票的状态统计一下,封装一个Map 发送到前端
+        Map<String,Long> resultMap = ticketService.countTicketByState();
+
+        model.addAttribute("resultMap",resultMap);
+        return "ticket/chart/home";
     }
 
 }

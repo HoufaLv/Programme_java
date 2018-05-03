@@ -5,6 +5,8 @@ import com.ksit.tms.entity.TicketExample;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TicketMapper {
@@ -58,4 +60,11 @@ public interface TicketMapper {
      * @return
      */
     List<Ticket> selectListByBeginAndEnd(String beginTicketNum, String endTicketNum);
+
+    /**
+     * 根据状态查询票的数量
+     * @return
+     */
+    Map<String,Long> countTicketByState();
+
 }

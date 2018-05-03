@@ -18,6 +18,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.annotations.Param;
 import org.apache.shiro.SecurityUtils;
 
+import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -259,6 +260,81 @@ public class TicketServicveImpl implements TicketService {
     }
 
     /**
+     * 将票的状态统计一下,发送到前端
+     *
+     * @return
+     */
+    @Override
+    public Map<String, Long> countTicketByState() {
+
+        Map<String, Long> resultMap = ticketMapper.countTicketByState();
+
+        return resultMap;
+    }
+
+    /**
+     * 财务相关
+     * 根据状态和页码将年票下发记录查出来
+     *
+     * @param queryParam
+     * @param pageNo
+     * @return
+     */
+    @Override
+    public PageInfo<TicketOutRecord> selectTicketOutRecordByParam(Map<String, Object> queryParam, Integer pageNo) {
+        return selectTicketOutRecordByPageNoAndQueryParam(pageNo,queryParam);
+    }
+
+    /**
+     * 根据id 查询年票下发记录
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public TicketOutRecord selectticketoutrecordbyId(Integer id) {
+        return ticketOutRecordMapper.selectByPrimaryKey(id);
+    }
+
+    /**
+     * 根据id 对下发的订单支付
+     *
+     * @param id
+     * @param payType
+     */
+    @Override
+    public void payTicketOutRecord(Integer id, String payType) {
+        // TODO: 2018/5/2 0002 查出记录,如果状态正确,修改状态 ,并且将对应票段的票的状态修改为已支付
+
+        TicketOutRecord ticketOutRecord = ticketOutRecordMapper.selectByPrimaryKey(id);
+        if (ticketOutRecord!=null && TicketOutRecord.STATE_NO_PAY.equals(ticketOutRecord.getState())){
+            Account currAccount = ShiroUtil.getCurrAccount();
+
+            ticketOutRecord.setPayType(payType);
+            ticketOutRecord.setState(TicketOutRecord.STATE_PAY);
+            ticketOutRecord.setFinanceAccountId(currAccount.getId());
+            ticketOutRecord.setFinanceAccountName(currAccount.getAccountName());
+
+            //更新这条下发记录
+            ticketOutRecordMapper.updateByPrimaryKeySelective(ticketOutRecord);
+
+            //更新对应的票段,该记录中有开始票号和结束票号
+            List<Ticket> ticketList = ticketMapper.selectListByBeginAndEnd(ticketOutRecord.getBeginTicketNum(), ticketOutRecord.getEndTicketNum());
+
+            for (Ticket ticket : ticketList) {
+                ticket.setTicketState(Ticket.TICKET_STATE_OUT_STORE);
+                ticket.setStoreAccountId(ticketOutRecord.getStoreAccountId());
+                ticket.setTicketOutTime(DateTime.now().toString("YYYY-MM-dd"));
+                ticket.setUpdateTime(new Date());
+                ticketMapper.updateByPrimaryKeySelective(ticket);
+            }
+
+
+        }
+    }
+
+
+    /**
      * 根据当前页号和查询参数去查询分页数据
      * @param pageNo
      * @param queryParam
@@ -278,9 +354,9 @@ public class TicketServicveImpl implements TicketService {
         }
 
         ticketOutRecordExample.setOrderByClause("id desc");
-        List<TicketOutRecord> ticketOutRecords = ticketOutRecordMapper.selectByExample(ticketOutRecordExample);
+        List<TicketOutRecord> ticketOutRecordList = ticketOutRecordMapper.selectByExample(ticketOutRecordExample);
 
-        return new PageInfo<>(ticketOutRecords);
+        return new PageInfo<>(ticketOutRecordList);
     }
 
     /**

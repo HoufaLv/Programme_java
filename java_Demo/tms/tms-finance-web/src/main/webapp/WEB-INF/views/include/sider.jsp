@@ -24,7 +24,7 @@
             <%--<shiro:hasRole name="finance">
             </shiro:hasRole>--%>
                 <li class="header">财务管理</li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> <span>售票点缴费</span></a></li>
+                <li><a href="/finance/ticket"><i class="fa fa-circle-o"></i> <span>售票点缴费</span></a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i> <span>景区结算</span></a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i> <span>销售统计</span></a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i> <span>验票统计</span></a></li>

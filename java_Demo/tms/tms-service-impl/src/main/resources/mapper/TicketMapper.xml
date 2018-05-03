@@ -108,12 +108,12 @@
         </if>
     </delete>
     <delete id="batchDelete">
-        delete  from  ticket
+        delete from ticket
         where
         id
         in (
         <foreach collection="list" item="id" separator=",">
-          #{id}
+            #{id}
         </foreach>
         )
     </delete>
@@ -224,6 +224,19 @@
         and
         ticket_num &lt;= CONVERT(#{param2},UNSIGNED INT)
     </select>
+
+    <select id="countTicketByState" resultType="java.util.Map">
+      SELECT
+            count(*) as total,
+            count(case when ticket_state = '已入库' then 1 end) AS in_num,
+            count(case when ticket_state = '已下发' then 1 end) AS out_num,
+            count(case when ticket_state = '已销售' then 1 end) AS sale_num,
+            count(case when ticket_state = '已挂失' then 1 end) AS lost_num,
+            count(case when ticket_state = '已过期' then 1 end) AS outtime_num
+        FROM
+            ticket
+    </select>
+
     <update id="updateByExampleSelective" parameterType="map">
         update ticket
         <set>
