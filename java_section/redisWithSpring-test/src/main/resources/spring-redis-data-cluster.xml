@@ -16,27 +16,27 @@
         <property name="clusterNodes">
             <list>
                 <bean class="org.springframework.data.redis.connection.RedisNode">
-                    <constructor-arg name="host" value="192.168.153.131"/>
+                    <constructor-arg name="host" value="192.168.1.149"/>
                     <constructor-arg name="port" value="6379"/>
                 </bean>
                 <bean class="org.springframework.data.redis.connection.RedisNode">
-                    <constructor-arg name="host" value="192.168.153.133"/>
+                    <constructor-arg name="host" value="192.168.1.150"/>
                     <constructor-arg name="port" value="6379"/>
                 </bean>
                 <bean class="org.springframework.data.redis.connection.RedisNode">
-                    <constructor-arg name="host" value="192.168.153.134"/>
+                    <constructor-arg name="host" value="192.168.1.184"/>
                     <constructor-arg name="port" value="6379"/>
                 </bean>
                 <bean class="org.springframework.data.redis.connection.RedisNode">
-                    <constructor-arg name="host" value="192.168.153.135"/>
+                    <constructor-arg name="host" value="192.168.1.185"/>
                     <constructor-arg name="port" value="6379"/>
                 </bean>
                 <bean class="org.springframework.data.redis.connection.RedisNode">
-                    <constructor-arg name="host" value="192.168.153.136"/>
+                    <constructor-arg name="host" value="192.168.1.114"/>
                     <constructor-arg name="port" value="6379"/>
                 </bean>
                 <bean class="org.springframework.data.redis.connection.RedisNode">
-                    <constructor-arg name="host" value="192.168.153.137"/>
+                    <constructor-arg name="host" value="192.168.153.115"/>
                     <constructor-arg name="port" value="6379"/>
                 </bean>
             </list>

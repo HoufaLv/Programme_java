@@ -22,14 +22,43 @@ public class JedisSpringDateCluster {
     }
 
     @Test
-    public void setStringTestCase(){
-        redisTemplate.opsForValue().set("name:1001","tom");
+    public void setStringTestCase() {
+        //redisTemplate.opsForValue().set("name:1001","tom");
     }
 
     @Test
-    public void getStringTestCase(){
-        String name = (String) redisTemplate.opsForValue().get("name:1001");
+    public void getStringTestCase() {
+        String name = (String) redisTemplate.opsForValue().get("name:1");
         System.out.println("name = " + name);
+    }
+
+    @Test
+    public void batchInsertTestCase() {
+
+        long begin = System.currentTimeMillis();
+
+        for (int i = 0; i < 1000; i++) {
+            redisTemplate.opsForValue().set("address:" + i, "address:" + i);
+        }
+
+        long end = System.currentTimeMillis();
+
+
+    }
+
+    @Test
+    public void batchInsertTestCaseNumber() {
+
+        long begin = System.currentTimeMillis();
+
+        for (int i = 0; i < 10000; i++) {
+            redisTemplate.opsForValue().set("id:" + i, ""+i);
+        }
+
+        long end = System.currentTimeMillis();
+
+        long time = end - begin;
+        System.out.println("time" + time/1000);
 
     }
 }
