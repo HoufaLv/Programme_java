@@ -2,21 +2,36 @@ package com.ksit.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.google.gson.Gson;
 import com.ksit.entity.Product;
 import com.ksit.entity.ProductType;
 import com.ksit.mapper.ProductMapper;
 import com.ksit.service.ProductService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.stereotype.Service;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
 
 import java.util.List;
 import java.util.Map;
 
 @Service
+@CacheConfig(cacheNames = "products")
 public class ProductServiceImpl implements ProductService {
+
+    private Logger logger = LoggerFactory.getLogger(ProductServiceImpl.class);
 
     @Autowired
     private ProductMapper productMapper;
+    @Autowired
+    private JedisPool jedisPool;
+    @Autowired
+    private CacheManager cacheManager;
+
 
     /**
      * 根据id 查找对应的 Product
@@ -26,7 +41,27 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public Product selectById(Integer id) {
-        return productMapper.selectById(id);
+
+        final String KEY = "product" + id;
+        Product product = null;
+        Jedis jedis = jedisPool.getResource();
+
+        //如果redis 中存在key 的话,从redis 中获取缓存,反序列化,将对象返回
+        if (jedis.exists(KEY)){
+            String json = jedis.get(KEY);
+            product = new Gson().fromJson(json,Product.class);
+            logger.info("select {} from redis -> " + product);
+        }else{
+            //如果不存在的话就去数据库中查一下,添加到缓存中去
+            Product product1 = productMapper.selectById(id);
+            if (product1!=null){
+                jedis.set(KEY,new Gson().toJson(product1));
+            }
+            logger.info("select {} from DB ->" + id);
+        }
+        jedis.close();
+        return product;
+        //return productMapper.selectById(id);
     }
 
     /**
