@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>com.iw</groupId>
-            <artifactId>tms-service</artifactId>
+            <artifactId>tms-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
